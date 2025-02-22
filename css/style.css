@@ -260,14 +260,14 @@ p {
     }
 
     .content-section-long-container {
-        width: 282px;
+        width: 320px;
         height: auto;
         margin-top: 12px;
         margin-left: 10px;
     }
     
     .content-section-short-container {
-        width: 282px;
+        width: 320px;
         height: auto;
         margin-top: 12px;
         margin-left: 10px;
@@ -282,8 +282,8 @@ p {
     }
     
     .image-content {
-        width: 282px;
-        height: 158.63px;
+        width: 320px;
+        height: 180px;
         object-fit: cover;
         border-radius: 5.9px;
     }
