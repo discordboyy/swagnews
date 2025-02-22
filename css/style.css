@@ -247,6 +247,7 @@ p {
 
     .long-container {
         margin: auto;
+        height: auto;
         border-radius: 8.14px;
         width: fill;
     }
@@ -259,7 +260,7 @@ p {
     }
 
     .content-section-long-container {
-        width: 375px;
+        width: 282px;
         height: auto;
         margin-top: 12px;
         margin-left: 10px;
@@ -281,10 +282,10 @@ p {
     }
     
     .image-content {
-        width: 375px;
-        height: 210.94px;
+        width: 282px;
+        height: 158.63px;
         object-fit: cover;
-        border-radius: 7.84px;
+        border-radius: 5.9px;
     }
     
     p {
