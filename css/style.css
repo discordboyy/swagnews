@@ -1,0 +1,318 @@
+/* GENERAL */
+
+* {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: #000000;
+    text-rendering: optimizelegibility;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+/* HEADER */
+
+header {
+    z-index: 999;
+    background-color: white;
+    display: flex;
+    justify-content: center; /* Centers the nav horizontally */
+    align-items: center;
+    height: 80px;
+    position: sticky;
+    top: 0%;
+    background-attachment: scroll;
+}
+
+hr {
+    position: fixed; /* Fix the HR to a specific position */
+    top: 80px; /* Set the HR directly below the header (70px matches the header height) */
+    left: 0;
+    width: 100%; /* Make sure it spans the viewport width */
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0; /* Remove default margins */
+    z-index: 998; /* Keep it just below the header (if overlapping is a concern) */
+}
+
+.section-news {
+    width: 1120px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.small-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 17.71px; /* vertical gap first, then horizontal gap */
+    align-items: flex-start; /* Aligns items to the top */
+}
+
+.long-container {
+    background-color: #F7F7F7;
+    border-radius: 13.28px;
+    width: 695.02px;
+    height: 436.05px;
+    cursor: pointer;
+}
+
+.short-container {
+    background-color: #F7F7F7;
+    border-radius: 13.28px;
+    width: 407.27px;
+    height: 436.05px;
+}
+
+.content-section-long-container {
+    width: 436.05px;
+    height: 385.14px;
+    margin-top: 26.56px;
+    margin-left: 28.77px;
+}
+
+.content-section-short-container {
+    width: 345.3px;
+    height: 385.14px;
+    margin-top: 26.56px;
+    margin-left: 28.77px;
+}
+
+.content-section-long-container-youtube {
+    width: 436.05px;
+    height: 385.14px;
+    margin-top: 26.56px;
+    margin-left: 28.77px;
+}
+
+h2 {
+    font-weight: 500;
+    color: #999999;
+    font-size: 12.09px;
+}
+
+h1 {
+    font-weight: 400;
+    color: #000000;
+    font-size: 16.66px;
+}
+
+.image-content {
+    width: 354.15px;
+    height: 199.21px;
+    object-fit: cover;
+    border-radius: 9.62px;
+}
+
+p {
+    font-weight: 400;
+    color: #999999;
+    font-size: 13.24px;
+}
+
+.content-description-long-container {
+    
+}
+
+.content-description-short-container {
+    
+}
+
+
+.long-container-youtube {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(https://img.youtube.com/vi/2eZNoM1tB_U/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+    border-radius: 13.28px;
+    width: 695.02px;
+    height: 436.05px;
+    cursor: pointer;
+}
+
+.long-container-youtube:hover {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(https://i.ytimg.com/an_webp/2eZNoM1tB_U/mqdefault_6s.webp?du=3000&sqp=CIDO5r0G&rs=AOn4CLD0FWSvwF5K83b-N2Cuvd2OBg0sTA);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-youtube {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 1560px) {
+/* none */
+}
+
+@media screen and (max-width: 1440px) {
+/* none */
+}
+
+@media screen and (max-width: 1400px) {
+/* none */
+}
+
+@media screen and (max-width: 1320px) {
+    .section-news {
+        width: 80%;
+        margin: auto;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+
+}
+
+@media screen and (max-width: 920px) {
+
+}
+
+@media screen and (max-width: 720px) {
+    .long-container {
+        width: 90%;
+    }
+    
+    .content-section-long-container {
+        width: 345.3px;
+        height: 385.14px;
+    }
+
+    .long-container-youtube {
+        width: 90%;
+        height: 300px;
+    }
+
+    .content-section-long-container-youtube {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .section-news {
+        width: 84%;
+    }
+    
+    .long-container {
+        border-radius: 13.28px;
+        width: 407.27px;
+        height: 436.05px;
+    }
+    
+    .content-section-long-container {
+        width: 345.3px;
+        height: 385.14px;
+        margin-top: 26.56px;
+        margin-left: 28.77px;
+    }
+
+    .long-container-youtube {
+        border-radius: 13.28px;
+        width: 407.27px;
+    }
+
+    .content-section-long-container-youtube {
+        width: 345.3px;
+        margin-top: 26.56px;
+        margin-left: 28.77px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .section-news {
+        width: 90%;
+    }
+
+    .small-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px 17.71px; /* vertical gap first, then horizontal gap */
+        align-items: flex-start; /* Aligns items to the top */
+    }
+
+    .long-container {
+        margin: auto;
+        border-radius: 8.14px;
+        width: 302px;
+        height: 325.05px;
+    }
+
+    .short-container {
+        margin: auto;
+        border-radius: 8.14px;
+        width: 302px;
+        height: 320.05px;
+    }
+
+    .content-section-long-container {
+        width: 282px;
+        height: 286.05px;
+        margin-top: 12px;
+        margin-left: 10px;
+    }
+    
+    .content-section-short-container {
+        width: 282px;
+        height: 286.05px;
+        margin-top: 12px;
+        margin-left: 10px;
+    }
+    
+    h2 {
+        font-size: 7.41px;
+    }
+    
+    h1 {
+        font-size: 16px;
+    }
+    
+    .image-content {
+        width: 282px;
+        height: 158.63px;
+        object-fit: cover;
+        border-radius: 5.9px;
+    }
+    
+    p {
+        font-size: 10px;
+    }
+
+
+    .long-container-youtube {
+        margin: auto;
+        border-radius: 8.14px;
+        width: 302px;
+        height: 180px;
+    }
+
+    .content-section-long-container-youtube {
+        width: 282px;
+        height: 170px;
+        margin-top: 12px;
+        margin-left: 10px;
+    }
+
+    .icon-youtube {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+}
