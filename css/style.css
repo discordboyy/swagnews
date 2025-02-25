@@ -372,7 +372,7 @@ h3 {
 }
 
 .banner-section {
-    top: -2820px;
+    top: -3220px;
     position: sticky;
     display: flex;
     flex-direction: column;
@@ -511,7 +511,7 @@ h3 {
     }
 
     .banner-section {
-        top: -3390px;
+        top: -4390px;
     }
 }
 
@@ -557,21 +557,21 @@ h3 {
 @media screen and (max-width: 1120px) {
 
     .banner-section {
-        top: -3390px;
+        top: -4390px;
     }
 
 }
 
 @media screen and (max-width: 920px) {
     .banner-section {
-        top: -3390px;
+        top: -4390px;
     }
 }
 
 @media screen and (max-width: 830px) {
 
     .banner-section {
-        top: -3390px;
+        top: -4390px;
     }
 }
 
@@ -620,7 +620,7 @@ h3 {
     }
 
     .banner-section {
-        top: -2670px;
+        top: -4000px;
     }
 }
 
@@ -762,6 +762,10 @@ h3 {
     .logo {
         content: url('../link/créative-web-logo-2.svg');
     }
+
+    .banner-section {
+        top: -3600px;
+    }
 }
 
 @media screen and (max-width: 620px) {
@@ -798,7 +802,7 @@ h3 {
     }
 
     .banner-section {
-        top: -2450px;
+        top: -3600px;
     }
 
     #adCloseButton {
@@ -813,6 +817,10 @@ h3 {
         height: 200px;
         object-fit: cover;
         border-radius: 5.9px;
+    }
+
+    .banner-section {
+        top: -3500px;
     }
 
 }
@@ -963,7 +971,7 @@ h3 {
     }
 
     .banner-section {
-        top: -2880px;
+        top: -3880px;
     }
 
     .banner-title {
@@ -978,7 +986,7 @@ h3 {
 
 @media screen and (max-width: 375px) {
     .banner-section {
-        top: -2860px;
+        top: -3860px;
     }
 
     .banner-title {
