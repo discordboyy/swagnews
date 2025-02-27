@@ -204,6 +204,22 @@ p {
     transition: background-image 1s ease-in-out; /* Transition only the background image */
 }
 
+#pollyceremony-youtube-1 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(https://img.youtube.com/vi/GHjb1sIAvbM/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+
+#pollyceremony-youtube-2 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(https://img.youtube.com/vi/X8qEa6H-9tI/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+
 
 .icon-youtube {
     width: 50px;
@@ -372,7 +388,7 @@ h3 {
 }
 
 .banner-section {
-    top: -3220px;
+    top: -4420px;
     position: sticky;
     display: flex;
     flex-direction: column;
@@ -437,7 +453,7 @@ h3 {
 /* Стили заголовков, текста и кнопок */
 .banner-title {
     text-align: left;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 10px;
     color: #ffffff;
 }
@@ -511,7 +527,7 @@ h3 {
     }
 
     .banner-section {
-        top: -4390px;
+        top: -5550px;
     }
 }
 
@@ -557,21 +573,21 @@ h3 {
 @media screen and (max-width: 1120px) {
 
     .banner-section {
-        top: -4390px;
+        top: -5550px;
     }
 
 }
 
 @media screen and (max-width: 920px) {
     .banner-section {
-        top: -4390px;
+        top: -5550px;
     }
 }
 
 @media screen and (max-width: 830px) {
 
     .banner-section {
-        top: -4390px;
+        top: -5550px;
     }
 }
 
@@ -620,7 +636,7 @@ h3 {
     }
 
     .banner-section {
-        top: -4000px;
+        top: -4660px;
     }
 }
 
@@ -764,7 +780,7 @@ h3 {
     }
 
     .banner-section {
-        top: -3600px;
+        top: -4260px;
     }
 }
 
@@ -802,7 +818,7 @@ h3 {
     }
 
     .banner-section {
-        top: -3600px;
+        top: -4250px;
     }
 
     #adCloseButton {
@@ -820,26 +836,12 @@ h3 {
     }
 
     .banner-section {
-        top: -3500px;
+        top: -4170px;
     }
 
 }
 
-@media screen and (min-width: 540px){
-
-    .banner-title {
-        font-size: 30px;
-    }
-
-    #adCloseButton {
-        margin-top: 10px;
-    }
-}
-
-@media screen and (min-width: 6200px) {
-    .banner-section {
-        top: -2560px;
-    }
+@media screen and (max-width: 540px){
 
     .banner-title {
         font-size: 30px;
@@ -971,7 +973,7 @@ h3 {
     }
 
     .banner-section {
-        top: -3880px;
+        top: -4440px;
     }
 
     .banner-title {
@@ -985,8 +987,28 @@ h3 {
 }
 
 @media screen and (max-width: 375px) {
+    header {
+        z-index: 999;
+        background-color: white;
+        display: flex;
+        justify-content: center; /* Centers the nav horizontally */
+        align-items: center;
+        height: 60px;
+        position: sticky;
+        top: 0%;
+        background-attachment: scroll;
+    }
+
+    #logo {
+        height: 32px;
+    }
+
+    hr {
+        top: 60px; /* Set the HR directly below the header (70px matches the header height) */
+    }
+
     .banner-section {
-        top: -3890px;
+        top: -4430px;
     }
 
     .banner-title {
