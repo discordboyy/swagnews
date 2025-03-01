@@ -374,6 +374,14 @@ h3 {
     height: 16px;
 }
 
+.long-container-video {
+    background-color: #F7F7F7;
+    border-radius: 16.6px;
+    width: 868.77px;
+    height: 545.06px;
+    cursor: pointer;
+}
+
 
 /* Затемнённый фон */
 .overlay {
@@ -644,10 +652,10 @@ h3 {
     .section-question, .section-contacts, .section-partners {
         flex-direction: column;
         background-color: #F7F7F7;
-        width: 302px;
+        width: 315.14px;
         height: auto;
-        border-radius: 8.14px;
-        padding: 12px 10px;
+        border-radius: 9.09px;
+        padding: 13.41px 11.18px;
     }
     
     .section-question {
@@ -661,7 +669,7 @@ h3 {
     }
     
     h3 {
-        font-size: 16px;
+        font-size: 17.88px;
         font-weight: 500;
         color: #000000;
         margin: 0;
@@ -670,7 +678,7 @@ h3 {
     .question-description {
         margin: 0;
         margin-top: 5px;
-        font-size: 10px;
+        font-size: 11.18px;
         line-height: 143.3%;
         width: fill;
     }
@@ -716,13 +724,13 @@ h3 {
     
     .name-item {
         margin: 0;
-        font-size: 31.2px;
+        font-size: 34.87px;
         color: #000000;
     }
     
     .role-item {
         margin: 0;
-        font-size: 12px;
+        font-size: 13.41px;
         color: #000000;
     }
     
@@ -732,13 +740,13 @@ h3 {
     
     .role {
         margin: 0;
-        font-size: 9.82px;
+        font-size: 10.97px;
         color: #000000;
     }
     
     .soc-description {
         margin-bottom: 10px;
-        font-size: 8.46px;
+        font-size: 9.46px;
         color: #000000;
     }
     
@@ -750,7 +758,7 @@ h3 {
     }
     
     .soc-link {
-        font-size: 16px;
+        font-size: 17.88px;
         color: #000000;
         position: relative; /* To position the arrow inside */
         text-decoration: none; /* Remove underline */
@@ -883,14 +891,14 @@ h3 {
     }
 
     .content-section-long-container {
-        width: 320px;
+        width: 95%;
         height: auto;
         margin-top: 12px;
         margin-left: 10px;
     }
     
     .content-section-short-container {
-        width: 320px;
+        width: 95%;
         height: auto;
         margin-top: 12px;
         margin-left: 10px;
@@ -905,47 +913,46 @@ h3 {
         margin-bottom: 25px;
     }
     
-    h2 {
-        font-size: 10px;
-    }
-    
     h1 {
         font-weight: 500;
         font-size: 22px;
     }
     
     .image-content {
-        width: 320px;
-        height: auto;
+        width: 100%;
+        height: 30vh;
         object-fit: cover;
         border-radius: 5.9px;
     }
 
     .open-item-image {
-        width: 320px;
-        height: 180px;
+        width: 100%;
+        height: 30vh;
         object-fit: cover;
         border-radius: 5.9px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
     
     .item-context {
-        width: 320px;
+        width: 312px;
         width: auto;
         column-gap: 14.6px;
     }
     
     .item-title {
         font-weight: 500;
-        font-size: 20.27px;
-        color: #999999;
+        font-size: 22px;
+        color: #000000;
         margin-bottom: 0;
     }
     
     .item-text {
         margin-top: 10px;
         font-weight: 500;
-        font-size: 22px;
+        font-size: 14px;
+        line-height: 170%;
+        letter-spacing: -1.9%;
+        color: #999999;
     }
     
     p {
