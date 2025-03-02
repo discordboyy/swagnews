@@ -227,6 +227,38 @@ p {
     border-radius: 100%;
 }
 
+.short-container-youtube {
+    border-radius: 16.6px;
+    width: 509.09px;
+    height: 545.06px;
+    cursor: pointer;
+}
+
+.content-section-short-container-youtube {
+    width: 345.3px;
+    height: 385.14px;
+    margin-top: 140.2px;
+    margin-left: 35.97px;
+}
+
+#nettspend-youtube-1 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(https://img.youtube.com/vi/nyMawpTaaG8/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+
+#notalka-youtube-1 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(https://img.youtube.com/vi/sGCEGVRSjN8/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+
+
+
 .section-footer {
     width: 1400px;
     height: auto;
@@ -646,6 +678,18 @@ h3 {
     .banner-section {
         top: -4660px;
     }
+
+    .short-container-youtube {
+        width: 509.09px;
+        height: 300px;
+    }
+    
+    .content-section-short-container-youtube {
+        width: 90%;
+        height: 90%;
+        margin-top: 10.2px;
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 709px) {
@@ -974,8 +1018,8 @@ h3 {
     }
 
     .icon-youtube {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         border-radius: 100%;
     }
 
