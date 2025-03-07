@@ -26,13 +26,40 @@ header {
     z-index: 999;
     background-color: white;
     display: flex;
-    justify-content: center; /* Centers the nav horizontally */
+    justify-content: center;
     align-items: center;
     height: 80px;
     position: sticky;
-    top: 0%;
+    top: 0;
     background-attachment: scroll;
 }
+
+.header-container {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the logo */
+    position: relative;
+}
+
+#eth-price {
+    position: absolute;
+    left: 20px; /* ETH price on the left */
+    font-size: 18px;
+    color: #999999;
+}
+
+#btc-price {
+    position: absolute;
+    right: 20px; /* BTC price on the right */
+    font-size: 18px;
+    color: #999999;
+}
+
+#logo {
+    height: 50px; /* Adjust the logo size */
+}
+
 
 hr {
     position: fixed; /* Fix the HR to a specific position */
@@ -876,6 +903,18 @@ h3 {
     #adCloseButton {
         margin-top: 10px;
     }
+
+    #eth-price {
+        position: absolute;
+        left: 0px; /* ETH price on the left */
+        font-size: 14px;
+    }
+    
+    #btc-price {
+        position: absolute;
+        right: 0px; /* BTC price on the right */
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 580px){
@@ -905,6 +944,26 @@ h3 {
 }
 
 @media screen and (max-width: 520px) {
+    header {
+        z-index: 999;
+        background-color: white;
+        display: flex;
+        justify-content: center; /* Centers the nav horizontally */
+        align-items: center;
+        height: 60px;
+        position: sticky;
+        top: 0%;
+        background-attachment: scroll;
+    }
+
+    #logo {
+        height: 32px;
+    }
+
+    hr {
+        top: 60px; /* Set the HR directly below the header (70px matches the header height) */
+    }
+
     .section-news {
         width: 90%;
     }
@@ -1034,29 +1093,9 @@ h3 {
     #adCloseButton {
         margin-top: 10px;
     }
-
 }
 
 @media screen and (max-width: 375px) {
-    header {
-        z-index: 999;
-        background-color: white;
-        display: flex;
-        justify-content: center; /* Centers the nav horizontally */
-        align-items: center;
-        height: 60px;
-        position: sticky;
-        top: 0%;
-        background-attachment: scroll;
-    }
-
-    #logo {
-        height: 32px;
-    }
-
-    hr {
-        top: 60px; /* Set the HR directly below the header (70px matches the header height) */
-    }
 
     .banner-section {
         top: -4430px;

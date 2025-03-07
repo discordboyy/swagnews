@@ -17,10 +17,57 @@
 </head>
 <body class="home">
     <header>
-        <div>
-            <a href="../index.html"><img src="../link/SWAGNEWS logo.svg" alt="logo"></a>
+        <div class="header-container">
+            <a href="https://www.tradingview.com/twitter-chart/?symbol=ethusd" id="eth-price">Loading...</a>
+            <a class="logo-position" href="">
+                <img id="logo" src="../link/SWAGNEWS logo.svg" alt="logo">
+            </a>
+            <a href="https://www.tradingview.com/twitter-chart/?symbol=btcusd" id="btc-price">Loading BTC...</a>
         </div>
-    </header> 
+    
+        <script>
+            async function fetchPrice() {
+                const response = await fetch('https://api.binance.com/api/v3/ticker/price?symbol=ETHUSDT');
+                const data = await response.json();
+                updatePriceText(data.price);
+            }
+        
+            function updatePriceText(price) {
+                const priceElement = document.getElementById('eth-price');
+                if (window.innerWidth <= 830) {
+                    priceElement.innerText = `$${parseFloat(price).toFixed(2)}`;
+                } else {
+                    priceElement.innerText = `ETH/USDT: $${parseFloat(price).toFixed(2)}`;
+                }
+            }
+        
+            fetchPrice();
+            setInterval(fetchPrice, 5000);
+            window.addEventListener('resize', fetchPrice);
+        </script>        
+
+        <script>
+            async function getBitcoinPrice() {
+                const btcResponse = await fetch('https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT');
+                const btcData = await btcResponse.json();
+                updateBitcoinPriceText(btcData.price);
+            }
+
+            function updateBitcoinPriceText(price) {
+                const priceElement = document.getElementById('btc-price');
+                if (window.innerWidth <= 830) {
+                    priceElement.innerText = `$${parseFloat(price).toFixed(2)}`;
+                } else {
+                    priceElement.innerText = `BTC/USDT: $${parseFloat(price).toFixed(2)}`;
+                }
+            }
+
+            getBitcoinPrice();
+            setInterval(getBitcoinPrice, 5000);
+            window.addEventListener('resize', getBitcoinPrice);
+        </script>
+
+    </header>
     <hr>
     <main>
         <div class="section-news">
@@ -53,7 +100,7 @@
                         <div class="content-section-long-container-youtube" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; ">
                             <div class="title-section">
                                 <img class="icon-youtube" src="https://yt3.googleusercontent.com/U4vfGK6YJ20PsWSbJr2vklkVciQANvEjztcoo0Aw_gGGFtIrZ5iRlO1gi9rNnF10d36EEuYIdQ=s160-c-k-c0x00ffffff-no-rj" alt="">
-                                <h2>Mertygraal, 0 переглядів </h2>
+                                <h2>Mertygraal, 11 переглядів </h2>
                                 <h1 style="color: white;">
                                     Як почати ненавидіти усіх | LOCKDOWN Protocol
                                 </h1>

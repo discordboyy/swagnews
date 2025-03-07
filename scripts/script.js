@@ -64,3 +64,27 @@ document.addEventListener("DOMContentLoaded", () => {
         showBanners();
     }
 });
+
+
+require('dotenv').config();
+const express = require('express');
+const fetch = require('node-fetch');
+
+const app = express();
+const PORT = 3000;
+const API_KEY = process.env.API_KEY;
+
+app.get('/eth-price', async (req, res) => {
+    try {
+        const response = await fetch(`https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=ETH&convert=USDT`, {
+            headers: { 'X-CMC_PRO_API_KEY': API_KEY }
+        });
+        const data = await response.json();
+        res.json({ price: data.data.ETH.quote.USDT.price });
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to fetch price' });
+    }
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
