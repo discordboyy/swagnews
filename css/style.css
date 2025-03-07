@@ -463,7 +463,7 @@ h3 {
 }
 
 .banner-section {
-    top: -4420px;
+    top: -4980px;
     position: sticky;
     display: flex;
     flex-direction: column;
@@ -602,12 +602,18 @@ h3 {
     }
 
     .banner-section {
-        top: -5550px;
+        top: -6700px;
     }
 }
 
 @media screen and (max-width: 1400px) {
 /* none */
+}
+
+@media screen and (max-width: 1300px) {
+    .banner-section {
+        top: -7270px;
+    }
 }
 
 @media screen and (max-width: 1320px) {
@@ -648,21 +654,21 @@ h3 {
 @media screen and (max-width: 1120px) {
 
     .banner-section {
-        top: -5550px;
+        top: -7270px;
     }
 
 }
 
 @media screen and (max-width: 920px) {
     .banner-section {
-        top: -5550px;
+        top: -7270px;
     }
 }
 
 @media screen and (max-width: 830px) {
 
     .banner-section {
-        top: -5550px;
+        top: -7270px;
     }
 }
 
@@ -711,7 +717,7 @@ h3 {
     }
 
     .banner-section {
-        top: -4660px;
+        top: -5640px;
     }
 
     .short-container-youtube {
@@ -867,7 +873,7 @@ h3 {
     }
 
     .banner-section {
-        top: -4260px;
+        top: -5320px;
     }
 }
 
@@ -905,7 +911,7 @@ h3 {
     }
 
     .banner-section {
-        top: -4250px;
+        top: -5300px;
     }
 
     #adCloseButton {
@@ -935,7 +941,7 @@ h3 {
     }
 
     .banner-section {
-        top: -4170px;
+        top: -5200px;
     }
 
 }
@@ -1091,7 +1097,7 @@ h3 {
     }
 
     .banner-section {
-        top: -4440px;
+        top: -4740px;
     }
 
     .banner-title {
@@ -1106,7 +1112,7 @@ h3 {
 @media screen and (max-width: 375px) {
 
     .banner-section {
-        top: -4430px;
+        top: -4880px;
     }
 
     .banner-title {
