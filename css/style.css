@@ -180,17 +180,39 @@ h1 {
     margin: auto;
 }
 
-.item-title {
-    font-weight: 500;
-    font-size: 20.27px;
-    color: #999999;
+.article-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.item-text {
+.item-title {
     font-weight: 500;
     font-size: 31.42px;
     color: black;
     line-height: 143.3%;
+}
+
+.item-text {
+    font-weight: 500;
+    font-size: 20.27px;
+    color: #3b3b3b;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#assignement-1 {
+    font-weight: 500;
+    font-size: 24.27px;
+    color: #181818;
+    margin-bottom: 0;
+}
+
+.item-li {
+    font-weight: 500;
+    font-size: 20.27px;
+    color: #3b3b3b;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -255,6 +277,14 @@ p {
     transition: background-image 1s ease-in-out; /* Transition only the background image */
 }
 
+#minecraft-1 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(../link/content/minecraft/mine-server.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+
 
 .icon-youtube {
     width: 50px;
@@ -310,7 +340,7 @@ p {
 .section-question, .section-contacts, .section-partners {
     flex-direction: column;
     background-color: #F7F7F7;
-    width: 476.58px;
+    width: 100%;
     height: auto;
     border-radius: 13.75px;
     padding: 20.28px 16.9px;
@@ -318,8 +348,8 @@ p {
 
 .section-question {
     display: flex;
-    justify-content: flex-end; /* Aligns items to the right */
-    align-items: flex-end; /* Aligns items to the bottom */
+    justify-content: flex-start; /* Aligns items to the right */
+    align-items: flex; /* Aligns items to the bottom */
 }
 
 .title-question {
@@ -342,6 +372,7 @@ h3 {
 }
 
 .button-contacts {
+    align-self: flex-end;
     background-color: #000000;
     width: 130.13px;
     height: 55.43px;
@@ -731,13 +762,11 @@ h3 {
         margin-top: 10.2px;
         margin-left: 10px;
     }
-}
 
-@media screen and (max-width: 709px) {
     .section-question, .section-contacts, .section-partners {
         flex-direction: column;
         background-color: #F7F7F7;
-        width: 315.14px;
+        width: 485.49px;
         height: auto;
         border-radius: 9.09px;
         padding: 13.41px 11.18px;
@@ -746,8 +775,11 @@ h3 {
     .section-question {
         display: flex;
         justify-content: flex-end; /* Aligns items to the right */
-        align-items: flex-end; /* Aligns items to the bottom */
+        align-items: flex; /* Aligns items to the bottom */
     }
+}
+
+@media screen and (max-width: 709px) {
     
     .title-question {
         margin-bottom: 8.29px;
@@ -944,6 +976,15 @@ h3 {
         top: -5200px;
     }
 
+
+    .section-question, .section-contacts, .section-partners {
+        flex-direction: column;
+        background-color: #F7F7F7;
+        width: 95%;
+        height: auto;
+        border-radius: 9.09px;
+        padding: 13.41px 11.18px;
+    }
 }
 
 @media screen and (max-width: 540px){
@@ -1069,7 +1110,21 @@ h3 {
         font-size: 14px;
         line-height: 170%;
         letter-spacing: -1.9%;
-        color: #999999;
+    }
+
+    .item-li {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 170%;
+        letter-spacing: -1.9%;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    .article-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     
     p {
@@ -1107,6 +1162,8 @@ h3 {
     #adCloseButton {
         margin-top: 10px;
     }
+
+    
 }
 
 @media screen and (max-width: 375px) {
