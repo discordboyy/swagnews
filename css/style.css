@@ -494,7 +494,7 @@ h3 {
 }
 
 .banner-section {
-    top: -4980px;
+    top: -5430px;
     position: sticky;
     display: flex;
     flex-direction: column;
@@ -633,7 +633,7 @@ h3 {
     }
 
     .banner-section {
-        top: -6700px;
+        top: -7710px;
     }
 }
 
@@ -643,7 +643,7 @@ h3 {
 
 @media screen and (max-width: 1300px) {
     .banner-section {
-        top: -7270px;
+        top: -7710px;
     }
 }
 
@@ -685,21 +685,21 @@ h3 {
 @media screen and (max-width: 1120px) {
 
     .banner-section {
-        top: -7270px;
+        top: -7760px;
     }
 
 }
 
 @media screen and (max-width: 920px) {
     .banner-section {
-        top: -7270px;
+        top: -7760px;
     }
 }
 
 @media screen and (max-width: 830px) {
 
     .banner-section {
-        top: -7270px;
+        top: -7790px;
     }
 }
 
@@ -748,7 +748,7 @@ h3 {
     }
 
     .banner-section {
-        top: -5640px;
+        top: -5900px;
     }
 
     .short-container-youtube {
@@ -905,7 +905,7 @@ h3 {
     }
 
     .banner-section {
-        top: -5320px;
+        top: -5590px;
     }
 }
 
@@ -943,7 +943,7 @@ h3 {
     }
 
     .banner-section {
-        top: -5300px;
+        top: -5580px;
     }
 
     #adCloseButton {
@@ -973,7 +973,7 @@ h3 {
     }
 
     .banner-section {
-        top: -5200px;
+        top: -5500px;
     }
 
 
@@ -1152,7 +1152,7 @@ h3 {
     }
 
     .banner-section {
-        top: -4740px;
+        top: -4920px;
     }
 
     .banner-title {
@@ -1169,7 +1169,7 @@ h3 {
 @media screen and (max-width: 375px) {
 
     .banner-section {
-        top: -4880px;
+        top: -5150px;
     }
 
     .banner-title {
