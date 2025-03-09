@@ -200,6 +200,14 @@ h1 {
     margin-bottom: 20px;
 }
 
+#point-out {
+    font-weight: 700;
+    font-size: 21.27px;
+    color: #3b3b3b;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 #assignement-1 {
     font-weight: 500;
     font-size: 24.27px;
@@ -279,6 +287,14 @@ p {
 
 #minecraft-1 {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(../link/content/minecraft/mine-server.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+
+#offgod-1 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.25), transparent), url(../link/content/another/offgodtate\ \(1\).jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -593,6 +609,102 @@ h3 {
     color: rgb(0, 0, 0);
 }
 
+
+
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+/* Image */
+.open-item-image-fix {
+    background-color: #ffffff;
+    width: 1361.08px;
+    height: 400.07px;
+    object-fit: contain;
+    border-radius: 11.71px;
+    margin-bottom: 20px;
+    cursor: pointer; /* Makes it clear that the image is clickable */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.open-item-image-fix:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Buttons */
+.CarouselBtnsContainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-self: start;
+    margin-left: 65px;
+}
+
+.CarouselBtnsContainer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    width: 90px;
+    height: 45.85px;
+    align-items: center;
+    outline: 0.85px solid #EAEAEA;
+    border-radius: 11.89px;
+}
+
+.CarouselBtnsContainer img {
+    width: 9.28px;
+    height: auto;
+    margin: auto;
+}
+
+/* Modal - Initially Hidden */
+.modal {
+    visibility: hidden;  /* Hidden by default */
+    opacity: 0;          /* Fully transparent */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* When Modal is Active */
+.modal.show {
+    visibility: visible; /* Make it visible */
+    opacity: 1;          /* Fully opaque */
+}
+
+/* Modal Content */
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
 @media screen and (max-width: 1560px) {
 /* none */
 }
@@ -633,8 +745,34 @@ h3 {
     }
 
     .banner-section {
-        top: -7710px;
+        top: -8280px;
     }
+
+    .CarouselBtnsContainer {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        align-self: start;
+        margin-left: 0;
+    }
+
+    .open-item-image-fix {
+        background-color: #ffffff;
+        width: 90%;
+        height: 570.43px;
+        object-fit: contain;
+        border-radius: 11.71px;
+        margin-bottom: 20px;
+        margin-left: -97px;
+        cursor: pointer; /* Makes it clear that the image is clickable */
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    /* Hover Effect */
+    .open-item-image-fix:hover {
+        transform: scale(1.05);
+    }
+    
 }
 
 @media screen and (max-width: 1400px) {
@@ -643,7 +781,7 @@ h3 {
 
 @media screen and (max-width: 1300px) {
     .banner-section {
-        top: -7710px;
+        top: -8280px;
     }
 }
 
@@ -680,26 +818,86 @@ h3 {
         column-gap: 14.6px;
         margin: auto;
     }
+
+    .CarouselBtnsContainer {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        align-self: start;
+        margin-left: 0;
+    }
+
+    .open-item-image-fix {
+        background-color: #ffffff;
+        width: 90%;
+        height: 570.43px;
+        object-fit: contain;
+        border-radius: 11.71px;
+        margin-bottom: 20px;
+        margin-left: -85px;
+        cursor: pointer; /* Makes it clear that the image is clickable */
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    /* Hover Effect */
+    .open-item-image-fix:hover {
+        transform: scale(1.05);
+    }
 }
 
 @media screen and (max-width: 1120px) {
 
+    .open-item-image-fix {
+        background-color: #ffffff;
+        width: 90%;
+        height: 570.43px;
+        object-fit: contain;
+        border-radius: 11.71px;
+        margin-bottom: 20px;
+        margin-left: -70px;
+        cursor: pointer; /* Makes it clear that the image is clickable */
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    /* Hover Effect */
+    .open-item-image-fix:hover {
+        transform: scale(1.05);
+    }
+
     .banner-section {
-        top: -7760px;
+        top: -8330px;
     }
 
 }
 
 @media screen and (max-width: 920px) {
+
+    .open-item-image-fix {
+        background-color: #ffffff;
+        width: 90%;
+        height: 570.43px;
+        object-fit: contain;
+        border-radius: 11.71px;
+        margin-bottom: 20px;
+        margin-left: -60px;
+        cursor: pointer; /* Makes it clear that the image is clickable */
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    /* Hover Effect */
+    .open-item-image-fix:hover {
+        transform: scale(1.05);
+    }
+
     .banner-section {
-        top: -7760px;
+        top: -8330px;
     }
 }
 
 @media screen and (max-width: 830px) {
 
     .banner-section {
-        top: -7790px;
+        top: -8370px;
     }
 }
 
@@ -748,7 +946,7 @@ h3 {
     }
 
     .banner-section {
-        top: -5900px;
+        top: -6240px;
     }
 
     .short-container-youtube {
@@ -776,6 +974,23 @@ h3 {
         display: flex;
         justify-content: flex-end; /* Aligns items to the right */
         align-items: flex; /* Aligns items to the bottom */
+    }
+
+    .open-item-image-fix {
+        background-color: #ffffff;
+        width: 90%;
+        height: 400.43px;
+        object-fit: contain;
+        border-radius: 11.71px;
+        margin-bottom: 0px;
+        margin-left: -40px;
+        cursor: pointer; /* Makes it clear that the image is clickable */
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    /* Hover Effect */
+    .open-item-image-fix:hover {
+        transform: scale(1.05);
     }
 }
 
@@ -905,7 +1120,7 @@ h3 {
     }
 
     .banner-section {
-        top: -5590px;
+        top: -5920px;
     }
 }
 
@@ -943,7 +1158,7 @@ h3 {
     }
 
     .banner-section {
-        top: -5580px;
+        top: -5910px;
     }
 
     #adCloseButton {
@@ -973,7 +1188,7 @@ h3 {
     }
 
     .banner-section {
-        top: -5500px;
+        top: -5830px;
     }
 
 
@@ -1122,6 +1337,28 @@ h3 {
         margin-top: auto;
     }
 
+    #point-out {
+        font-weight: 700;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .open-item-image-fix {
+        object-fit: cover;
+        width: 99%;
+        margin-left: -4px;
+    }
+    
+    .open-item-image-fix:hover {
+        transform: scale(1.03);
+    }
+
+    ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .article-container {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -1151,8 +1388,13 @@ h3 {
         border-radius: 100%;
     }
 
+    .banner {
+        padding: 20px; /* Внутренние отступы */
+        width: 80%; /* Ширина 60% от экрана */
+    }
+
     .banner-section {
-        top: -4920px;
+        top: -4880px;
     }
 
     .banner-title {
@@ -1169,7 +1411,7 @@ h3 {
 @media screen and (max-width: 375px) {
 
     .banner-section {
-        top: -5150px;
+        top: -5090px;
     }
 
     .banner-title {

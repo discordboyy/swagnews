@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAGNEWS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/script.js" defer></script>
+    <link rel="icon" type="image/png" href="../link/icon.png" sizes="32x32">
+    
+    <!--FONTS:-->
+    <!--Inter:-->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    
+
+</head>
+<body class="home">
+    <header>
+        <div class="header-container">
+            <a href="https://www.tradingview.com/twitter-chart/?symbol=ethusd" id="eth-price">Loading...</a>
+            <a class="logo-position" href="../index.html">
+                <img id="logo" src="../link/SWAGNEWS logo.svg" alt="logo">
+            </a>
+            <a href="https://www.tradingview.com/twitter-chart/?symbol=btcusd" id="btc-price">Loading BTC...</a>
+        </div>
+    
+        <script>
+            async function fetchPrice() {
+                const response = await fetch('https://api.binance.com/api/v3/ticker/price?symbol=ETHUSDT');
+                const data = await response.json();
+                updatePriceText(data.price);
+            }
+        
+            function updatePriceText(price) {
+                const priceElement = document.getElementById('eth-price');
+                if (window.innerWidth <= 830) {
+                    priceElement.innerText = `$${parseFloat(price).toFixed(2)}`;
+                } else {
+                    priceElement.innerText = `ETH/USDT: $${parseFloat(price).toFixed(2)}`;
+                }
+            }
+        
+            fetchPrice();
+            setInterval(fetchPrice, 5000);
+            window.addEventListener('resize', fetchPrice);
+        </script>        
+
+        <script>
+            async function getBitcoinPrice() {
+                const btcResponse = await fetch('https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT');
+                const btcData = await btcResponse.json();
+                updateBitcoinPriceText(btcData.price);
+            }
+
+            function updateBitcoinPriceText(price) {
+                const priceElement = document.getElementById('btc-price');
+                if (window.innerWidth <= 830) {
+                    priceElement.innerText = `$${parseFloat(price).toFixed(2)}`;
+                } else {
+                    priceElement.innerText = `BTC/USDT: $${parseFloat(price).toFixed(2)}`;
+                }
+            }
+
+            getBitcoinPrice();
+            setInterval(getBitcoinPrice, 5000);
+            window.addEventListener('resize', getBitcoinPrice);
+        </script>
+
+    </header>
+    <hr>
+    <main>
+        <div class="section-news">
+            <div class="big-section">
+                <div class="open-item">
+                    <div class="carousel-container">
+                        <!-- Clickable Image -->
+                        <img class="open-item-image-fix" id="carousel-image" 
+                             src="../link/content/another/offgodtate (1).jpg" 
+                             alt="Carousel Image">
+                    
+                        <!-- Navigation Buttons -->
+                        <div class="CarouselBtnsContainer">
+                            <button id="nextBtn" aria-label="Next image">
+                                <img src="../link/arrow right.svg">
+                            </button>
+                            <button id="prevBtn" aria-label="Previous image">
+                                <img src="../link/arrow left.svg">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal (Hidden by Default) -->
+                    <div id="imageModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="modalImg">
+                    </div>
+                                      
+                    <div class="item-context">
+                        <h1 class="item-title">OFFGOD:TATE x adidas Originals 2025</h1>
+                        <p class="item-text">
+                            Світ стрітверу та офісного стилю об'єднується в ексклюзивній колаборації <b id="point-out">adidas Originals by OFFGOD:TATE 2025</b>! Бренд <b id="point-out">OFFGOD:TATE</b>, яким керує культовий дизайнер і художник <b id="point-out">yalocaloffgod</b>, об’єднався з adidas Originals, щоб представити переосмислений офісний стиль <b id="point-out">Neo-office Attire</b> у межах своєї першої спільної колекції.
+                        </p>
+                    
+                        <article class="article-container">
+                            <h2 class="assignment-style" id="assignement-1">Де придбати?</h2>
+                            <p class="item-text">
+                                Колекція вже доступна в магазинах:
+                            </p>
+                            <ul>
+                                <li class="item-li"><a href="https://www.adidas.com.hk">adidas.com.hk</a></li>
+                            </ul>
+                        </article>
+                    
+                        <article class="article-container">
+                            <h2 class="assignment-style" id="assignement-1">Головний акцент: adidas Originals x OFFGOD:TATE Superstar 82</h2>
+                            <p class="item-text">
+                                Ця модель перевертає уявлення про корпоративний стиль і додає йому <b id="point-out">вуличної естетики</b>. Кросівки отримали:
+                            </p>
+                            <ul>
+                                <li class="item-li">Шкіряні графічні нашивки, які створюють унікальний дизайн;</li>
+                                <li class="item-li">Камуфляжний носок з витонченими деталями;</li>
+                                <li class="item-li">3D-друкований череп як аксесуар, що підкреслює впізнаваний стиль OFFGOD:TATE.</li>
+                            </ul>
+                            <p class="item-text"><strong>Ціна на Superstar 82: $198</strong></p>
+                        </article>
+                    
+                        <article class="article-container">
+                            <h2 class="assignment-style" id="assignement-1">Що ще у колекції?</h2>
+                            <p class="item-text">
+                                Окрім культових кросівок, колекція включає одяг і аксесуари, які змінюють уявлення про стиль «casual office».
+                            </p>
+                            <p class="item-text"><strong>Очікуйте незабаром:</strong></p>
+                            <ul>
+                                <li class="item-li">Лофтові PU-шкіряні куртки;</li>
+                                <li class="item-li">Оверсайз Firebird Track Tops і штани;</li>
+                                <li class="item-li">Класичні футболки-ринґери;</li>
+                                <li class="item-li">Графічні кепки з фірмовими принтами OFFGOD:TATE.</li>
+                            </ul>
+                        </article>
+                    
+                        <article class="article-container">
+                            <p class="item-text">
+                                Колаборація <b id="point-out">OFFGOD:TATE x adidas Originals 2025</b> — це унікальний мікс мистецтва, молодіжної культури та високої моди. Не пропустіть можливість стати частиною нового тренду!
+                            </p>
+                        </article>
+                    </div>                    
+                    
+                </div>
+            </div>
+            
+            <div class="small-section">
+
+                <div class="short-container-youtube" data-link="https://youtu.be/sGCEGVRSjN8?si=jkejOlkviR8TMMys" id="notalka-youtube-1">
+                    <div class="content-section-short-container-youtube" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; ">
+                        <div class="title-section">
+                            <img class="icon-youtube" src="https://yt3.googleusercontent.com/WO9ZrFBaoHuBWRrOMHtCI9US9-5re9lKMPO-FIbj66GFkUxLxRl9Md98ABX1tkEpuMhZ15X1-Js=s160-c-k-c0x00ffffff-no-rj" alt="">
+                            <h2>
+                                Ноталка Шелягіна, 67 тис. переглядів 
+                            </h2>
+                            <h1 style="color: white;">
+                                Безбатарейковий iPhone, комуністичний ШІ та провал RTX 5080
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                    <!---->
+                    <div class="long-container-youtube" data-link="https://youtu.be/fAvndUbSNP4" id="mertygraal-youtube-3">
+                        <div class="content-section-long-container-youtube" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; ">
+                            <div class="title-section">
+                                <img class="icon-youtube" src="https://yt3.googleusercontent.com/U4vfGK6YJ20PsWSbJr2vklkVciQANvEjztcoo0Aw_gGGFtIrZ5iRlO1gi9rNnF10d36EEuYIdQ=s160-c-k-c0x00ffffff-no-rj" alt="">
+                                <h2>Mertygraal, 11 переглядів </h2>
+                                <h1 style="color: white;">
+                                    Як почати ненавидіти усіх | LOCKDOWN Protocol
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                        <!---->
+                    <a href="page-02.html" class="short-container">
+                        <div class="content-section-short-container">
+                            <div class="title-section">
+                                <h2>креативні web</h2>
+                                <h1>Як знайти референси?</h1>
+                            </div>
+                            <img class="image-content" src="../link/content/créative web/Як знайти референси для свого портфоліо.png" alt="">
+                            <p class="content-description-short-container">Ви ніколи не зможете швидко знайти референси які вам дійсно підійдуть у портфоліо особливо коли треба знайти дійсно гарне натхнення. Запамятайте Pinterest, Are.na, Twitter, Tumblr, Dribbble чи Awwwards, ви ніколи не зможете знайти усі діаманти просто нічого не шукаючи...</p>
+                        </div>
+                    </a>
+
+                    <div class="long-container-youtube" data-link="https://www.youtube.com/watch?v=GHjb1sIAvbM" id="pollyceremony-youtube-1">
+                        <div class="content-section-long-container-youtube" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; ">
+                            <div class="title-section">
+                                <img class="icon-youtube" src="https://yt3.googleusercontent.com/cdXrTPKMUpNZygy6ibXwmxesTV19ObkcFPumTf-OONG3wQZrwVrQx_-wJjtEDNZU08p7HOKG_g=s160-c-k-c0x00ffffff-no-rj" alt="">
+                                <h2>
+                                    PollyCeremony, 6,7 тис. переглядів
+                                </h2>
+                                <h1 style="color: white;">
+                                    KANYE WEST: ІСТОРІЯ БОЖЕВІЛЛЯ II
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="page-03.html" class="short-container">
+                        <div class="content-section-short-container">
+                            <img class="image-content" src="../link/content/créative web/sicko.png" alt="">
+                            <div class="title-section">
+                                <h2>креативні web</h2>
+                                <h1>Sicko</h1>
+                            </div>
+                            <p class="content-description-short-container">
+                                Sicko — це бренд одягу, створений репером Young Thug. <br> Бренд став відомим завдяки своєму унікальному дизайну та стилю, але особливо ще тому що вони заполонили інтернет своїми артами та постерами.
+                            </p>
+                        </div>
+                    </a>
+                
+                    <div class="long-container-youtube" data-link="https://youtu.be/dEEc1tsphE4" id="mertygraal-youtube-1">
+                        <div class="content-section-long-container-youtube" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; ">
+                            <div class="title-section">
+                                <img class="icon-youtube" src="https://yt3.googleusercontent.com/U4vfGK6YJ20PsWSbJr2vklkVciQANvEjztcoo0Aw_gGGFtIrZ5iRlO1gi9rNnF10d36EEuYIdQ=s160-c-k-c0x00ffffff-no-rj" alt="">
+                                <h2>Mertygraal</h2>
+                                <h1 style="color: white;">
+                                    Останній заїзд | Counter-Strike 2
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="long-container-youtube" data-link="https://youtube.com/watch?v=LYZhOpYn2tk" id="mertygraal-youtube-2">
+                        <div class="content-section-long-container-youtube" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; ">
+                            <div class="title-section">
+                                <img class="icon-youtube" src="https://yt3.googleusercontent.com/U4vfGK6YJ20PsWSbJr2vklkVciQANvEjztcoo0Aw_gGGFtIrZ5iRlO1gi9rNnF10d36EEuYIdQ=s160-c-k-c0x00ffffff-no-rj" alt="">
+                                <h2>Mertygraal</h2>
+                                <h1 style="color: white;">
+                                    Одного разу під Полтавою | Counter-Strike 2
+    
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="short-container-youtube" data-link="https://www.youtube.com/watch?v=nyMawpTaaG8" id="nettspend-youtube-1">
+                        <div class="content-section-short-container-youtube" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; ">
+                            <div class="title-section">
+                                <img class="icon-youtube" src="https://yt3.googleusercontent.com/BbjSMoiLhr7xlzzWQZA34jg6ce32V7KT3mb672HYAy5ij_MyeW8mIICqNqcTeUAM2owOG5Q0Lf0=s160-c-k-c0x00ffffff-no-rj" alt="">
+                                <h2>
+                                    Nettspend, 140 тис. переглядів 
+                                </h2>
+                                <h1 style="color: white;">
+                                    Nettspend - Tommy (Music Video)
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="long-container-youtube" data-link="https://www.youtube.com/watch?v=X8qEa6H-9tI" id="pollyceremony-youtube-2">
+                        <div class="content-section-long-container-youtube" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; ">
+                            <div class="title-section">
+                                <img class="icon-youtube" src="https://yt3.googleusercontent.com/cdXrTPKMUpNZygy6ibXwmxesTV19ObkcFPumTf-OONG3wQZrwVrQx_-wJjtEDNZU08p7HOKG_g=s160-c-k-c0x00ffffff-no-rj" alt="">
+                                <h2>
+                                    PollyCeremony, 75 тис. переглядів
+                                </h2>
+                                <h1 style="color: white;">
+                                    KANYE WEST: ІСТОРІЯ БОЖЕВІЛЛЯ
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="page-01.html" class="long-container">
+                        <div class="content-section-long-container">
+                            <div class="title-section">
+                                <h2>креативні web</h2>
+                                <h1>Що таке Стиль?</h1>
+                            </div>
+                            <img class="image-content" src="../link/content/créative web/Що таке стиль.png" alt="">
+                            <p class="content-description-long-container">СТИЛь це деталі які повторюються, від роботи до робити й виділяють цим роботи художника, надають свого стилю. У випадку SpaceHeadTR це включає використання геометричні форм, абстракцій, як ви можете бачити на банері. Ці елементи створюють унікальний стиль, який дозволяє впізнавати його роботи та відрізняти їх від інших художників.</p>
+                        </div>
+                    </a>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="section-footer">
+            <div class="section-question">
+                <div class="title-question">
+                    <h3>Маєте ідею чи пропозицію?</h3>
+                    <p class="question-description">Якщо у вас є цікава ідея або пропозиція щодо матеріалів для публікації на нашому сайті, ми будемо раді її розглянути. <br>Щоб подати свою ідею, зв’яжіться з розробником сайту. Уся необхідна інформація та контакти знаходяться нижче. <br>Дякуємо за вашу ініціативність!</p>
+                </div>
+                <a href="#contacts" class="button-contacts">
+                    <p class="button-description">контакти</p>
+                </a>
+            </div>
+            <div id="contacts" class="section-contacts">
+                <div class="holder-contacts">
+                    <div class="name-contact">
+                        <p class="name-item">Mertygraal</p>
+                        <p class="role-item">(P, D)</p>
+                    </div>
+                    <div class="more-informatio">
+                        <div class="roles">
+                            <p class="role">(D) Designer</p>
+                            <p class="role">(P) Project owner</p>
+                        </div>
+                        <div class="soc">
+                            <p class="soc-description">соцмережі для контакту з зробником</p>
+                            <div class="soc-container">
+                                <a class="soc-link" href="https://www.instagram.com/mertygraal/">Instagram <span class="arrow"><img src="../link/arrow.svg"></span></a>
+                                <a class="soc-link" href="https://discord.gg/v4qaAne6dx">Discord <span class="arrow"><img src="../link/arrow.svg"></span></a>
+                                <a class="soc-link" href="https://linktr.ee/mertygraal">Linktr.ee <span class="arrow"><img src="../link/arrow.svg"></span></a>
+                                <a class="soc-link" href="https://x.com/mertygraal">Twitter <span class="arrow"><img src="../link/arrow.svg"></span></a>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-question">
+                <div class="title-question">
+                    <h3>Сайт створений за допомоги партнерів créative web</h3>
+                    <p class="question-description">SWAGNEWS & créative web</p>
+                </div>
+                <a href="https://t.me/creativewebtg" class="button-contacts">
+                    <img class="logo" src="../link/créative-web-logo.svg" alt="créative web logo">
+                </a>                
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
+
+

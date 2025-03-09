@@ -16,7 +16,6 @@ document.querySelectorAll('#giperurl').forEach(container => {
     });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
     const overlay = document.getElementById("overlay");
     const adBanner = document.getElementById("adBanner");
@@ -65,6 +64,74 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+const images = [
+    "../link/content/another/offgodtate (1).jpg",
+    "../link/content/another/offgodtate (2).jpg",
+    "../link/content/another/offgodtate (3).jpg",
+    "../link/content/another/offgodtate (4).jpg",
+    "../link/content/another/offgodtate (5).jpg",
+    "../link/content/another/offgodtate (6).jpg",
+    "../link/content/another/offgodtate (7).jpg",
+];
+
+let currentIndex = parseInt(localStorage.getItem("lastImageIndex")) || 0; // Load last image or default to 0
+const imageElement = document.getElementById("carousel-image");
+const prevButton = document.getElementById("prevBtn");
+const nextButton = document.getElementById("nextBtn");
+
+// Modal Elements
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close");
+
+// Function to update the carousel image and save index
+function updateImage(index) {
+    imageElement.src = images[index];
+    localStorage.setItem("lastImageIndex", index); // Save current image index
+}
+
+// Load the last image when the page loads
+updateImage(currentIndex);
+
+// Navigate Left
+prevButton.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateImage(currentIndex);
+});
+
+// Navigate Right
+nextButton.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateImage(currentIndex);
+});
+
+// Open Image in Modal
+imageElement.addEventListener("click", function () {
+    modal.classList.add("show");
+    modalImg.src = images[currentIndex];
+});
+
+// Function to Close Modal
+function closeModal() {
+    modal.classList.remove("show");
+}
+
+// Close Modal when clicking the close button
+closeBtn.addEventListener("click", closeModal);
+
+// Close Modal when clicking outside the image
+modal.addEventListener("click", function (event) {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
+
+// Close Modal when pressing the Escape Key (ESC)
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && modal.classList.contains("show")) {
+        closeModal();
+    }
+});
 
 require('dotenv').config();
 const express = require('express');
@@ -87,4 +154,3 @@ app.get('/eth-price', async (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
