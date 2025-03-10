@@ -872,21 +872,29 @@ h3 {
 
 @media screen and (max-width: 920px) {
 
+    .open-item {
+        padding-top: 35.27px;
+        padding-left: 25.46px;
+        padding-right: 25.46px;
+        padding-bottom: 5.27px;
+        width: auto;
+        margin-bottom: 25px;
+    }
+
     .open-item-image-fix {
         background-color: #ffffff;
-        width: 90%;
+        width: 100%;
         height: 570.43px;
         object-fit: contain;
         border-radius: 11.71px;
-        margin-bottom: 20px;
-        margin-left: -60px;
+        margin: auto;
         cursor: pointer; /* Makes it clear that the image is clickable */
         transition: transform 0.3s ease-in-out;
     }
     
     /* Hover Effect */
     .open-item-image-fix:hover {
-        transform: scale(1.05);
+        transform: scale(1.03);
     }
 
     .banner-section {
@@ -925,14 +933,15 @@ h3 {
     .open-item {
         width: 80%;
         padding-top: 25.27px;
-        padding-left: 15.46px;
-        padding-right: 15.46px;
-        padding-bottom: 15.27px;
+        padding-left: 30.46px;
+        padding-right: 30.46px;
+        padding-bottom: 5.27px;
+        width: auto;
         margin-bottom: 25px;
     }
 
     .open-item-image {
-        width: 110%;
+        width: 100%;
         height: 570.43px;
         object-fit: cover;
         border-radius: 11.71px;
@@ -978,12 +987,12 @@ h3 {
 
     .open-item-image-fix {
         background-color: #ffffff;
-        width: 90%;
+        width: 100%;
         height: 400.43px;
         object-fit: contain;
         border-radius: 11.71px;
         margin-bottom: 0px;
-        margin-left: -40px;
+        margin: auto;
         cursor: pointer; /* Makes it clear that the image is clickable */
         transition: transform 0.3s ease-in-out;
     }
@@ -1281,7 +1290,7 @@ h3 {
         width: auto;
         padding-top: 15px;
         padding-left: 8px;
-        padding-right: 5px;
+        padding-right: 8px;
         padding-bottom: 15px;
         margin-bottom: 25px;
     }
@@ -1321,16 +1330,16 @@ h3 {
     
     .item-text {
         margin-top: 10px;
-        font-weight: 500;
-        font-size: 14px;
+        font-weight: 400;
+        font-size: 15.73px;
         line-height: 170%;
-        letter-spacing: -1.9%;
+        letter-spacing: 0.1%;
     }
 
     .item-li {
         margin-top: 10px;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 15.73px;
         line-height: 170%;
         letter-spacing: -1.9%;
         margin-bottom: auto;
@@ -1339,15 +1348,16 @@ h3 {
 
     #point-out {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 15.73px;
         margin-top: 10px;
         margin-bottom: 20px;
     }
 
     .open-item-image-fix {
+        width: 100%;
         object-fit: cover;
-        width: 99%;
-        margin-left: -4px;
+        margin: auto;
+        
     }
     
     .open-item-image-fix:hover {

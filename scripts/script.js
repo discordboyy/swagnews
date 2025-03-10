@@ -71,7 +71,7 @@ let touchEndX = 0;
 // Prevent double-tap zoom
 document.addEventListener("touchend", function (event) {
     const now = Date.now();
-    if (now - lastTouchTime <= 200) {
+    if (now - lastTouchTime <= 300) {
         event.preventDefault(); // Prevent double-tap zoom
     }
     lastTouchTime = now;
