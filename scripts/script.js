@@ -64,6 +64,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+let lastTouchTime = 0;
+let touchStartX = 0;
+let touchEndX = 0;
+
+// Prevent double-tap zoom
+document.addEventListener("touchend", function (event) {
+    const now = Date.now();
+    if (now - lastTouchTime <= 200) {
+        event.preventDefault(); // Prevent double-tap zoom
+    }
+    lastTouchTime = now;
+}, { passive: false });
+
+// Image carousel setup
 const images = [
     "../link/content/another/offgodtate (1).jpg",
     "../link/content/another/offgodtate (2).jpg",
@@ -135,15 +149,12 @@ document.addEventListener("keydown", function (event) {
 
 // ----------------- Add This Swipe Gesture Support -----------------
 
-let touchStartX = 0;
-let touchEndX = 0;
-
-// Detect touch start
+// Detect touch start for swipe
 imageElement.addEventListener("touchstart", (event) => {
     touchStartX = event.touches[0].clientX;
 });
 
-// Detect touch end and determine swipe direction
+// Detect touch end for swipe
 imageElement.addEventListener("touchend", (event) => {
     touchEndX = event.changedTouches[0].clientX;
     handleSwipe();
@@ -163,6 +174,7 @@ function handleSwipe() {
         updateImage(currentIndex);
     }
 }
+
 
 
 require('dotenv').config();
