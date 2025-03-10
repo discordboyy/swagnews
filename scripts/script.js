@@ -133,6 +133,38 @@ document.addEventListener("keydown", function (event) {
     }
 });
 
+// ----------------- Add This Swipe Gesture Support -----------------
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+// Detect touch start
+imageElement.addEventListener("touchstart", (event) => {
+    touchStartX = event.touches[0].clientX;
+});
+
+// Detect touch end and determine swipe direction
+imageElement.addEventListener("touchend", (event) => {
+    touchEndX = event.changedTouches[0].clientX;
+    handleSwipe();
+});
+
+// Function to handle swipe actions
+function handleSwipe() {
+    const swipeThreshold = 50; // Minimum distance to consider a swipe
+
+    if (touchStartX - touchEndX > swipeThreshold) {
+        // Swipe left (next image)
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage(currentIndex);
+    } else if (touchEndX - touchStartX > swipeThreshold) {
+        // Swipe right (previous image)
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage(currentIndex);
+    }
+}
+
+
 require('dotenv').config();
 const express = require('express');
 const fetch = require('node-fetch');
