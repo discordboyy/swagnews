@@ -497,119 +497,6 @@ h3 {
 }
 
 
-/* Затемнённый фон */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 5;
-    display: none;
-}
-
-.banner-section {
-    top: -5430px;
-    position: sticky;
-    display: flex;
-    flex-direction: column;
-    gap: 16px; /* Расстояние между баннерами */
-    position: relative;
-    margin: 0 auto;
-    z-index: 10;
-}
-
-/* Баннер общий */
-.banner {
-    position: relative;
-    background: rgba(255, 255, 255, 0.2); /* Полупрозрачный светлый фон */
-    color: #ffffff; /* Белый текст */
-    border-radius: 25px; /* Скруглённые края */
-    padding: 40px; /* Внутренние отступы */
-    text-align: start; /* Текст выравнивается слева */
-    z-index: 10; /* Высокий уровень слоя */
-    display: none; /* Скрыто по умолчанию */
-    flex-direction: column; /* Вертикальное размещение */
-    gap: 15px; /* Расстояние между дочерними элементами */
-    align-items: center; /* Центрирование элементов по горизонтали */
-    cursor: pointer; /* Курсор-указатель при наведении */
-    transition: 0.2s ease-in-out; /* Плавные переходы для всех изменений */
-    backdrop-filter: blur(10px); /* Эффект размытия заднего плана */
-    -webkit-backdrop-filter: blur(10px); /* Для Safari */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Полупрозрачная белая рамка */
-    width: 50%; /* Ширина 60% от экрана */
-    margin: 0px auto; /* Центрирование сверху и снизу */
-    height: auto; /* Авто высота по содержимому */
-    box-shadow: 0px 22px 28px rgba(0, 0, 0, 0.1); /* Эффект тени */
-}
-
-
-.banner-content {
-    height: auto;
-    width: 100%;
-}
-
-.banner:hover {
-    background-color: #333; /* Тёмный фон при наведении */
-    transition: 0.2s ease-in-out; /* Плавный переход фона */
-}
-
-/* Центрация баннера */
-#adBanner {
-    /*  
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    */
-}
-
-#cookieBanner {
-    /*         
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    */
-}
-
-/* Стили заголовков, текста и кнопок */
-.banner-title {
-    text-align: left;
-    font-size: 30px;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-.banner-text {
-    color: white;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.banner-image {
-    color: white;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.banner-button {
-    padding: 10px 20px;
-    background-color: #636363;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
-    transition: 0.2s ease;
-}
-
-.banner-button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-}
-
-
 
 /* Carousel Container */
 .carousel-container {
@@ -1331,15 +1218,15 @@ h3 {
     .item-text {
         margin-top: 10px;
         font-weight: 400;
-        font-size: 15.73px;
-        line-height: 170%;
+        font-size: 17.77px;
+        line-height: 1.7em;
         letter-spacing: 0.1%;
     }
 
     .item-li {
         margin-top: 10px;
         font-weight: 500;
-        font-size: 15.73px;
+        font-size: 17.77px;
         line-height: 170%;
         letter-spacing: -1.9%;
         margin-bottom: auto;
@@ -1348,7 +1235,7 @@ h3 {
 
     #point-out {
         font-weight: 700;
-        font-size: 15.73px;
+        font-size: 17.77px;
         margin-top: 10px;
         margin-bottom: 20px;
     }
@@ -1358,6 +1245,10 @@ h3 {
         object-fit: cover;
         margin: auto;
         
+    }
+
+    #carousel-image-nettspend {
+        object-fit: contain;
     }
     
     .open-item-image-fix:hover {
