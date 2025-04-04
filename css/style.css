@@ -175,14 +175,14 @@ h1 {
 }
 
 .item-context {
-    width: 1223.63px;
+    width: 878px;
     column-gap: 14.6px;
-    margin: auto;
+    margin: auto;   
 }
 
 .article-container {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .item-title {
@@ -190,11 +190,12 @@ h1 {
     font-size: 31.42px;
     color: black;
     line-height: 143.3%;
+    margin-bottom: 47px;
 }
 
 .item-text {
-    font-weight: 500;
-    font-size: 20.27px;
+    font-weight: 400;
+    font-size: 24px;
     color: #3b3b3b;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -210,9 +211,9 @@ h1 {
 
 #assignement-1 {
     font-weight: 500;
-    font-size: 24.27px;
+    font-size: 26px;
     color: #181818;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .item-li {
@@ -227,6 +228,20 @@ p {
     font-weight: 400;
     color: #999999;
     font-size: 16.55px;
+}
+
+.connector {
+    width: fill;
+    align-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.connector-image {
+    margin: auto;
+    align-self: center;
+    width: 100%;
+    height: auto;
 }
 
 .content-description-long-container {
@@ -767,6 +782,15 @@ h3 {
         width: auto;
         margin-bottom: 25px;
     }
+
+    .open-item-image {
+        width: 100%;
+        height: 570.43px;
+        object-fit: cover;
+        border-radius: 11.71px;
+        margin-bottom: 20px;
+    }
+
 
     .open-item-image-fix {
         background-color: #ffffff;
