@@ -7,6 +7,15 @@ document.querySelectorAll('.long-container-youtube').forEach(container => {
     });
 });
 
+document.querySelectorAll('.short-container-youtube').forEach(container => {
+    container.addEventListener('click', () => {
+        const link = container.dataset.link;
+        if (link) {
+            window.open(link, '_blank');
+        }
+    });
+});
+
 document.querySelectorAll('#giperurl').forEach(container => {
     container.addEventListener('click', () => {
         const link = container.dataset.link;
