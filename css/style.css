@@ -677,6 +677,10 @@ h3 {
 
 
 
+.instagram-post {
+    margin-left: 20%;
+}
+
 @media screen and (max-width: 1560px) {
 /* none */
 }
@@ -921,6 +925,10 @@ h3 {
     .banner-section {
         top: -8330px;
     }
+
+    .instagram-post {
+        margin-left: 10%;
+    }
 }
 
 @media screen and (max-width: 830px) {
@@ -1054,6 +1062,10 @@ h3 {
     
     .catalog-meta-time {
         font-size: 9.27px;
+    }
+
+    .instagram-post {
+        margin-left: auto;
     }
 }
 
