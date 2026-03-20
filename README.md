@@ -1,103 +1,97 @@
-# 📣 swagnews
+# SWAGNEWS — React
 
-**swagnews** — A simple project for delivering news or updates in a stylish Discord‑friendly format.
+Migrated from static HTML to React + Vite. Hosted on GitHub Pages.
 
-This repository contains all the files and scripts needed to run swagnews, a web‑based news feed or static site that shows the latest updates in a clean, responsive design. It can serve as the foundation for a **Discord announcement page, news page or personal blog**.
+## Stack
 
----
+- React 18
+- React Router v6 (HashRouter — works on GitHub Pages without a server)
+- Vite 5
+- DM Sans + Bebas Neue + DM Mono fonts
+- No UI library — pure custom CSS
 
-## 🚀 Features
-
-* 📄 Static site built with HTML, CSS, and JavaScript
-* 🛠 Easy to host (GitHub Pages, Netlify, Vercel, etc.)
-* 🎨 Clean and minimal interface for showcasing news
-* ✨ Fully customizable layout
-* 📦 MIT‑licensed and open for contributions
-
----
-
-## 📦 Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing.
-
-### Prerequisites
-
-Make sure you have the following installed:
-
-* Git
-* A modern browser (Chrome, Firefox, Edge, Safari)
-
----
-
-## 💾 Installation
-
-1. **Clone the repository**
-
-   ```sh
-   git clone https://github.com/discordboyy/swagnews.git
-   ```
-
-2. **Navigate into the directory**
-
-   ```sh
-   cd swagnews
-   ```
-
-3. **Open `index.html` in your browser**
-
-   * You can just double‑click it
-   * Or serve it locally with a tool like Live Server
-
----
-
-## 💡 Usage
-
-You can update the content inside the HTML/CSS as needed:
-
-* ✏️ Edit news items in the HTML
-* 🎨 Change styles in the CSS folder
-* 📜 Add scripts for dynamic content in the JavaScript folder
-
-You can deploy the site easily using **GitHub Pages** or any static hosting provider.
-
----
-
-## 🎯 Deployment
-
-### GitHub Pages
-
-1. Go to your repository’s **Settings**
-2. Navigate to **Pages**
-3. Select the `main` branch and the root directory
-4. Save and publish
-
-Your site will go live at:
+## Project structure
 
 ```
-https://discordboyy.github.io/swagnews/
+src/
+  components/
+    Header.jsx       ← sticky header with logo + crypto tickers
+    Footer.jsx       ← contacts, socials, partner logo
+    NewsCard.jsx     ← article / external link card
+    YouTubeCard.jsx  ← YouTube video card
+    Sidebar.jsx      ← créative web sidebar
+    CategoryTag.jsx  ← colored category pill
+  pages/
+    Home.jsx         ← main feed (interleaved articles + youtube)
+    Article.jsx      ← single article view
+  data/
+    posts.js         ← ALL content lives here (edit this to add posts)
+  App.jsx
+  main.jsx
+  index.css
 ```
 
----
+## Setup
 
-## 🤝 Contributing
+```bash
+npm install
+npm run dev
+```
 
-Contributions are welcome! Here’s how:
+## Add a new post
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+Open `src/data/posts.js` and add an object to the `posts` array:
 
-Please follow good commit practices and include clear descriptions.
+```js
+{
+  id: 'my-post',              // unique slug (used in URL)
+  type: 'article',            // 'article' | 'external'
+  category: 'креативні web', // affects the color tag
+  title: 'Post title',
+  excerpt: 'Short description shown on the feed',
+  image: 'https://...',       // or null
+  date: '2025-05-01',
+  content: `
+    Your article text here.
+    Supports paragraphs and numbered lists.
+  `,
+}
+```
 
----
+For an external link (opens in new tab, no article page):
+```js
+{
+  id: 'some-link',
+  type: 'external',
+  category: 'новини світу',
+  title: 'Title',
+  excerpt: 'Description',
+  image: 'https://...',
+  date: '2025-05-01',
+  url: 'https://...',    // ← external URL
+}
+```
 
-## 📄 License
+## Deploy to GitHub Pages
 
-This project is licensed under the **MIT License** — see the **LICENSE** file for details.
+### Option A — GitHub Actions (recommended)
 
----
+1. Push to GitHub
+2. Go to **Settings → Pages**
+3. Set source to **GitHub Actions**
+4. Push anything to `main` — it deploys automatically
 
-## 📌 Contact
+### Option B — manual with gh-pages
 
-If you have questions or want help, feel free to open an issue!
+```bash
+npm run deploy
+```
+
+## URLs
+
+- Dev:  `http://localhost:5173`
+- Live: `https://discordboyy.github.io/swagnews/`
+
+Routes use hash mode so GitHub Pages works without 404 redirects:
+- `/#/` → home feed
+- `/#/post/mixxtales` → article page
