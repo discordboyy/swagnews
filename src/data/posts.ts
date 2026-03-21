@@ -261,7 +261,7 @@ export const feedItems: FeedItem[] = [
     category: 'креативні web',
     title: 'Що таке Стиль?',
     description: 'СТИЛь це деталі які повторюються, від роботи до роботи й виділяють цим роботи художника, надають свого стилю.',
-    image: './src/link/content/créative web/Що таке стиль.png',
+    image: './src/link/content/créative web/style.png',
     imagePosition: 'bottom',
     size: 'short',
     sections: [

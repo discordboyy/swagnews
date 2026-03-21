@@ -1,9 +1,10 @@
-// src/pages/Article.tsx
 import { useParams, useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import { feedItems } from '../data/posts.ts'
 import type { ArticleFeedItem, ArticleSection } from '../components/types'
 import Sidebar from '../components/Sidebar'
+import NewsCard from '../components/NewsCard'
+import YouTubeCard from '../components/YouTubeCard'
 
 function Section({ s, index }: { s: ArticleSection; index: number }) {
   return (
@@ -79,20 +80,21 @@ export default function Article() {
 
   const article = item as ArticleFeedItem
 
+  const related = feedItems
+    .filter((f) => f.id !== article.id)
+    .slice(0, 8)
+
   return (
     <main>
       <div className="section-news">
 
-        {/* ── big-section (matches original layout) ── */}
         <div className="big-section">
           <div className="open-item">
 
-            {/* Hero image (page-07, page-05 style) */}
             {article.heroImage && (
               <img className="open-item-image" src={article.heroImage} alt="" />
             )}
 
-            {/* Instagram embed (page-08 style) */}
             {article.instagram && (
               <div className="item-context">
                 <div className="instagram-post">
@@ -124,7 +126,6 @@ export default function Article() {
               </div>
             )}
 
-            {/* Main content block */}
             <div className="item-context">
               <h1 className="item-title">
                 {article.itemTitle ?? article.title}
@@ -137,68 +138,19 @@ export default function Article() {
 
           </div>
 
-          {/* Back button */}
           <button onClick={() => navigate('/')} className="article-back-btn">
             ← назад
           </button>
         </div>
 
-        {/* ── Sidebar ── */}
         <Sidebar />
 
-        {/* ── small-section (related feed on the right, same as originals) ── */}
+        {/* ── related feed — reuses the exact same components as Home ── */}
         <div className="small-section">
-          {feedItems
-            .filter((f) => f.id !== article.id)
-            .slice(0, 8)
-            .map((f) => {
-              if (f.type === 'youtube') {
-                const style = {
-                  cursor: 'pointer',
-                  background: `linear-gradient(to top, rgba(0,0,0,0.8), transparent), url(${f.thumbnail})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }
-
-                const containerClass = f.size === 'short' ? 'short-container-youtube' : 'long-container-youtube'
-                const innerClass     = f.size === 'short' ? 'content-section-short-container-youtube' : 'content-section-long-container-youtube'
-                return (
-                  <div
-                    key={f.id}
-                    className={containerClass}
-                    onClick={() => window.open(f.url, '_blank', 'noopener,noreferrer')}
-                    style={style}
-                  >
-                    <div className={innerClass} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-end' }}>
-                      <div className="title-section">
-                        <img className="icon-youtube" src={f.avatar} alt="" />
-                        <h2>{f.channel}{f.views ? `, ${f.views}` : ''}</h2>
-                        <h1 style={{ color: 'white' }}>{f.title}</h1>
-                      </div>
-                    </div>
-                  </div>
-                )
-              }
-              return (
-                <div
-                  key={f.id}
-                  className="short-container"
-                  onClick={() => navigate(`/post/${f.id}`)}
-                  style={{ cursor: 'pointer' }}
-                >
-                  <div className="content-section-short-container">
-                    {f.image && <img className="image-content" src={f.image} alt="" />}
-                    <div className="title-section" id={`${item.id}-title-section`}>
-                      <h2 id={`${item.id}-h2`}>{f.category}</h2>
-                      <h1 id={`${item.id}-h1`}>{f.title}</h1>
-                    </div>
-                    {f.description && (
-                      <p className="content-description-short-container">{f.description}</p>
-                    )}
-                  </div>
-                </div>
-              )
-            })}
+          {related.map((f) => {
+            if (f.type === 'youtube') return <YouTubeCard key={f.id} item={f} />
+            return <NewsCard key={f.id} item={f} />
+          })}
         </div>
 
       </div>
