@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import type { ArticleFeedItem, ExternalFeedItem } from './types'
+import "../css/new-style.css"; // основные стили
 
 type NewsCardItem = ArticleFeedItem | ExternalFeedItem
 
@@ -26,7 +27,7 @@ export default function NewsCard({ item }: Props) {
   const style =
   item.type === 'article' && item.bgStyle
     ? {
-        background: `linear-gradient(to top, rgba(0,0,0,0.25), transparent), url(/link/content/another/offgodtate-1.jpg)`,
+        background: `linear-gradient(to top, rgba(0,0,0,0.25), transparent), url(../src/link/content/another/offgodtate-1.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }
@@ -44,18 +45,19 @@ export default function NewsCard({ item }: Props) {
   return (
     <div
       className={containerClass}
+      id={item.id}
       onClick={handleClick}
       style={{ cursor: 'pointer', ...style }}
       role="link"
       tabIndex={0}
       onKeyDown={(e) => e.key === 'Enter' && handleClick()}
     >
-      <div className={innerClass}>
+      <div className={innerClass} id={`${item.id}-inner`}>
         {item.imagePosition !== 'bottom' && imageEl}
 
-        <div className="title-section">
-          <h2>{item.category}</h2>
-          <h1>
+        <div className="title-section" id={`${item.id}-title-section`}>
+          <h2 id={`${item.id}-h2`}>{item.category}</h2>
+          <h1 id={`${item.id}-h1`}>
             {item.title}
             {item.emoji && (
               <span>

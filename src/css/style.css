@@ -380,7 +380,7 @@ p {
 }
 
 #offgod-1 {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.25), transparent), url(../link/content/another/offgodtate-1.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.25), transparent),;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -675,7 +675,9 @@ h3 {
     cursor: pointer;
 }
 
-
+#offgod-adidas-h1 {
+    color: white;
+}
 
 .instagram-post {
     margin-left: 20%;
