@@ -1,10 +1,5 @@
 import type { FeedItem, SidebarItem } from '../components/types'
 
-// ─── FEED ITEMS ───────────────────────────────────────────────────────────────
-// type: 'article' | 'external' | 'youtube'
-// size: 'short' | 'long'   — matches .short-container / .long-container-youtube
-// Order here = order rendered on the page
-
 export const feedItems: FeedItem[] = [
   {
     id: 'mixxtales',
@@ -15,24 +10,34 @@ export const feedItems: FeedItem[] = [
     image: './src/link/content/another/MIXXTALES.png',
     emoji: './src/link/span/span-emoji 10.png',
     size: 'short',
-    content: `Allkill1t офіційно анонсував свій наступний альбом під назвою mixxtales. За словами артиста, цей реліз стане новою главою у його творчості.
-
-Альбом включатиме 11 треків:
-
-1. Different Trap Days
-2. Litniy Trek?
-3. Where am I
-4. On G Way
-5. Runna Mod
-6. Hard Breath
-7. Be FoReal
-8. Lost Crew
-9. Killa for dawg
-10. Let me be
-11. F.U.C.K.
-
-Реліз заплановано на 16 травня 2025 року на всіх стрімінгових платформах.`,
+    itemTitle: 'Allkill1t анонсував новий альбом "mixxtales": реліз заплановано на 16 травня 2025 року',
+    instagram: {
+      url: 'https://www.instagram.com/reel/DIqv_mIoRoL/?utm_source=ig_embed&utm_campaign=loading',
+      username: '@allkill1t',
+    },
+    sections: [
+      {
+        text: 'Allkill1t офіційно анонсував свій наступний альбом під назвою mixxtales. За словами артиста, цей реліз стане новою главою у його творчості та відображатиме внутрішні переживання, пошук себе та характерний вуличний вайб, який давно полюбили його слухачі.\n\nАльбом включатиме 11 треків:',
+        orderedList: [
+          { text: 'Different Trap Days', url: 'https://genius.com/Allkill1t-different-trap-days-lyrics' },
+          { text: 'Litniy Trek?',        url: 'https://genius.com/Allkill1t-litniy-trek-lyrics' },
+          { text: 'Where am I',          url: 'https://genius.com/Allkill1t-where-am-i-lyrics' },
+          { text: 'On G Way',            url: 'https://genius.com/Allkill1t-on-g-way-lyrics' },
+          { text: 'Runna Mod',           url: 'https://genius.com/Allkill1t-runna-mod-lyrics' },
+          { text: 'Hard Breath',         url: 'https://genius.com/Allkill1t-hard-breath-lyrics' },
+          { text: 'Be FoReal',           url: 'https://genius.com/Allkill1t-be-foreal-lyrics' },
+          { text: 'Lost Crew',           url: 'https://genius.com/Allkill1t-lost-crew-lyrics' },
+          { text: 'Killa for dawg',      url: 'https://genius.com/Allkill1t-killa-for-dawg-lyrics' },
+          { text: 'Let me be',           url: 'https://genius.com/Allkill1t-let-me-be-lyrics' },
+          { text: 'F.U.C.K.',            url: 'https://genius.com/Allkill1t-fuck-lyrics' },
+        ],
+      },
+      {
+        text: 'За попередньою інформацією, mixxtales вийде 16 травня 2025 року. Очікується, що альбом буде доступний на всіх популярних стрімінгових платформах.\n\nAllkill1t не вперше експериментує з атмосферою та звучанням, поєднуючи елементи trap, cloud та емо-репу. Новий реліз обіцяє бути ще більш особистим, з різноманітними настроями — від агресивного драйву до глибоких, майже медитативних треків.\n\nБільше інформації про реліз, потенційні кліпи та фітів поки не розкривається, однак уже зараз mixxtales викликає інтерес у фанатів та шанувальників незалежної реп-сцени.',
+      },
+    ],
   },
+
   {
     id: 'nettspend-mhopscotch',
     type: 'youtube',
@@ -44,6 +49,7 @@ export const feedItems: FeedItem[] = [
     size: 'long',
     thumbnail: 'https://i.ytimg.com/vi/xPhmHVkaZaY/maxresdefault.jpg',
   },
+
   {
     id: 'spotify-fix',
     type: 'external',
@@ -55,6 +61,7 @@ export const feedItems: FeedItem[] = [
     size: 'short',
     url: 'https://x.com/SpotifyStatus/status/1912538521489051844',
   },
+
   {
     id: 'mertygraal-zipka',
     type: 'youtube',
@@ -66,6 +73,7 @@ export const feedItems: FeedItem[] = [
     size: 'long',
     thumbnail: 'https://img.youtube.com/vi/_JZeWGITpyM/maxresdefault.jpg',
   },
+
   {
     id: 'ai',
     type: 'article',
@@ -75,8 +83,35 @@ export const feedItems: FeedItem[] = [
     image: './src/link/content/créative web/ai.png',
     emoji: './src/link/span/span-emoji 01.png',
     size: 'short',
-    content: `Штучний інтелект революціонізує кодинг, дизайн, музику та бізнес, скорочуючи час роботи з місяців до секунд. Майбутнє за тими, хто ефективно інтегрує ШІ у свою діяльність.`,
+    heroImage: './src/link/content/créative web/ai.png',
+    itemTitle: 'AI тут й зараз.',
+    sections: [
+      {
+        heading: 'кодинг',
+        headingEmoji: './src/link/span/span-emoji 03.png',
+        connector: './src/link/connector/connector (1).png',
+        text: 'Раніше програмування було виключно ручною роботою, що вимагала знань мов кодування, алгоритмів і структур даних. Помилки в коді могли коштувати компаніям тисячі доларів, а їх виправлення займало багато часу. Проте сьогодні штучний інтелект докорінно змінює процес написання коду.\n\nІнструменти на основі ШІ, такі як GitHub Copilot, ChatGPT та Tabnine, допомагають розробникам автоматично дописувати код, знаходити помилки, пропонувати оптимальні рішення. Це скорочує час роботи програмістів і робить кодинг доступнішим для новачків.\n\nЗавдяки ШІ можна створювати вебсайти та застосунки в рази швидше.',
+      },
+      {
+        heading: 'Швидкість створення контенту: дизайн, музика, графіка',
+        headingEmoji: './src/link/span/span-emoji 04.png',
+        connector: './src/link/connector/connector (2).png',
+        text: 'Якщо раніше створення якісного дизайну займало дні або навіть тижні, то зараз ШІ може впоратися з цим завданням за лічені хвилини. Інструменти на базі нейромереж здатні генерувати логотипи, ілюстрації, шрифти, сайти та навіть відео.\n\nШІ-інструменти, такі як Midjourney, DALL-E, Runway та Adobe Firefly, дозволяють дизайнерам створювати високоякісні зображення та графічні елементи просто за допомогою текстових підказок.\n\nУ музичній індустрії ШІ також здійснив революцію. Сервіси на кшталт AIVA, Amper Music та Soundraw генерують композиції за заданими параметрами.',
+      },
+      {
+        heading: 'як ШІ скорочує час роботи над проектами',
+        headingEmoji: './src/link/span/span-emoji 05.png',
+        connector: './src/link/connector/connector (3).png',
+        text: 'Уявімо ситуацію: дизайнер має створити постер для рекламної кампанії. Раніше цей процес займав декілька днів – потрібно було продумати концепцію, підібрати кольори, намалювати макет, зробити правки. Тепер же достатньо описати ідею ШІ, і він миттєво згенерує декілька варіантів дизайну.\n\nТе ж саме стосується веброзробки. Якщо раніше створення сайту вимагало довгих годин роботи дизайнерів та кодерів, то тепер можна завантажити приклад бажаного стилю та отримати автоматично згенерований макет з готовим кодом.',
+      },
+      {
+        heading: 'хто залишиться без ШІ, а хто адаптується',
+        headingEmoji: './src/link/span/span-emoji 06.png',
+        text: 'З розвитком ШІ суспільство розділиться на дві групи: тих, хто буде працювати без допомоги ШІ, і тих, хто інтегрує його у свої процеси.\n\nДруга група – це люди, які активно використовують штучний інтелект. AI-художники, AI-дизайнери, AI-програмісти та навіть AI-інженери будуть не просто працювати швидше, а й розширювати межі можливого.\n\nОчевидно, що майбутнє за тими, хто адаптується до нових технологій.',
+      },
+    ],
   },
+
   {
     id: 'sketches',
     type: 'article',
@@ -86,8 +121,49 @@ export const feedItems: FeedItem[] = [
     image: './src/link/content/créative web/Скетчі – ваш скарб!.png',
     emoji: './src/link/span/span-emoji 02.png',
     size: 'short',
-    content: `Скетчі – це основа будь-якої творчої професії, і вони мають величезну цінність у мистецтві, дизайні, моушн-дизайні, анімації, коміксах та інших сферах. Ось чому вони важливі та чому їх варто зберігати і навіть монетизувати.`,
+    heroImage: './src/link/content/créative web/Скетчі – ваш скарб! (1).png',
+    itemTitle: 'Скетчі – ваш скарб!',
+    sections: [
+      {
+        heading: 'Основа творчого процесу',
+        text: 'Скетчі – це перший крок у створенні будь-якого візуального проєкту. Вони допомагають зафіксувати ідеї, експериментувати з композицією, формами, персонажами та динамікою руху.',
+      },
+      {
+        heading: 'Еволюція стилю та досвіду',
+        text: 'Збереження скетчів дозволяє відстежувати власний прогрес, бачити, як змінюється стиль, покращується майстерність та знаходити натхнення у старих напрацюваннях.',
+      },
+      {
+        heading: 'Комерційна цінність',
+        text: 'Скетчі можуть приносити гроші різними способами:',
+        list: [
+          'Продаж журналам, видавництвам або арт-блогам.',
+          'Публікація в соціальних мережах, артбуках або патреоні.',
+          'NFT або цифрова галерея для цифрових робіт.',
+          'Продаж артбуків або курсів на основі скетчів.',
+        ],
+      },
+      {
+        heading: 'Відкритий доступ і реклама',
+        text: 'Викладання скетчів у відкритий доступ допомагає привернути увагу клієнтів та роботодавців. Це може стати частиною твого бренду.',
+      },
+      {
+        heading: 'Архівування та безпека',
+        text: 'Варто сканувати або фотографувати навіть паперові скетчі, щоб вони не були втрачені. Збереження в хмарі або на жорстких дисках гарантує їх доступність через роки.',
+      },
+      {
+        heading: 'Використання у майбутніх проєктах',
+        text: 'Старі скетчі можуть надихнути на нові роботи та вдосконалення попередніх ідей.',
+      },
+      {
+        heading: 'Ексклюзивність та унікальність',
+        text: 'Ручні або цифрові скетчі мають унікальну естетику, що робить їх цінними для колекціонерів, видавців та музеїв.',
+      },
+      {
+        text: 'Висновок: Скетчі – це не просто чорновики, а цінний ресурс для навчання, заробітку та збереження історії творчого розвитку.',
+      },
+    ],
   },
+
   {
     id: 'offgod-adidas',
     type: 'article',
@@ -97,8 +173,9 @@ export const feedItems: FeedItem[] = [
     image: null,
     size: 'long',
     bgStyle: true,
-    content: `Нова колаборація OFFGOD:TATE x adidas Originals 2025.`,
+    sections: [{ text: 'Нова колаборація OFFGOD:TATE x adidas Originals 2025.' }],
   },
+
   {
     id: 'mertygraal-lockdown',
     type: 'youtube',
@@ -110,6 +187,7 @@ export const feedItems: FeedItem[] = [
     size: 'short',
     thumbnail: 'https://img.youtube.com/vi/fAvndUbSNP4/maxresdefault.jpg',
   },
+
   {
     id: 'pollyceremony-youtube-1',
     type: 'youtube',
@@ -121,6 +199,7 @@ export const feedItems: FeedItem[] = [
     size: 'long',
     thumbnail: 'https://img.youtube.com/vi/GHjb1sIAvbM/maxresdefault.jpg',
   },
+
   {
     id: 'references',
     type: 'article',
@@ -130,8 +209,13 @@ export const feedItems: FeedItem[] = [
     image: './src/link/content/créative web/Як знайти референси для свого портфоліо.png',
     imagePosition: 'bottom',
     size: 'short',
-    content: `Ви ніколи не зможете швидко знайти референси які вам дійсно підійдуть у портфоліо особливо коли треба знайти дійсно гарне натхнення. Запамятайте Pinterest, Are.na, Twitter, Tumblr, Dribbble чи Awwwards — ви ніколи не зможете знайти усі діаманти просто нічого не шукаючи.`,
+    sections: [
+      {
+        text: 'Ви ніколи не зможете швидко знайти референси які вам дійсно підійдуть у портфоліо особливо коли треба знайти дійсно гарне натхнення. Запамятайте Pinterest, Are.na, Twitter, Tumblr, Dribbble чи Awwwards — ви ніколи не зможете знайти усі діаманти просто нічого не шукаючи.',
+      },
+    ],
   },
+
   {
     id: 'pollyceremony-kanye1',
     type: 'youtube',
@@ -143,6 +227,7 @@ export const feedItems: FeedItem[] = [
     size: 'long',
     thumbnail: 'https://img.youtube.com/vi/X8qEa6H-9tI/maxresdefault.jpg',
   },
+
   {
     id: 'identity',
     type: 'article',
@@ -151,8 +236,13 @@ export const feedItems: FeedItem[] = [
     description: 'Включає логотипи, кольори, шрифти, графічні елементи та інші візуальні компоненти, які використовуються для ідентифікації бренду. Це створює єдиний зовнішній вигляд компанії...',
     image: './src/link/content/créative web/Що таке айдентика.png',
     size: 'short',
-    content: `Айдентика включає логотипи, кольори, шрифти, графічні елементи та інші візуальні компоненти, які використовуються для ідентифікації бренду. Це створює єдиний зовнішній вигляд компанії.`,
+    sections: [
+      {
+        text: 'Айдентика включає логотипи, кольори, шрифти, графічні елементи та інші візуальні компоненти, які використовуються для ідентифікації бренду. Це створює єдиний зовнішній вигляд компанії.',
+      },
+    ],
   },
+
   {
     id: 'mertygraal-cs1',
     type: 'youtube',
@@ -164,6 +254,7 @@ export const feedItems: FeedItem[] = [
     size: 'long',
     thumbnail: 'https://img.youtube.com/vi/dEEc1tsphE4/maxresdefault.jpg',
   },
+
   {
     id: 'style',
     type: 'article',
@@ -173,8 +264,13 @@ export const feedItems: FeedItem[] = [
     image: './src/link/content/créative web/Що таке стиль.png',
     imagePosition: 'bottom',
     size: 'short',
-    content: `СТИЛь це деталі які повторюються, від роботи до роботи й виділяють цим роботи художника, надають свого стилю. У випадку SpaceHeadTR це включає використання геометричні форм, абстракцій, як ви можете бачити на банері.`,
+    sections: [
+      {
+        text: 'СТИЛь це деталі які повторюються, від роботи до роботи й виділяють цим роботи художника, надають свого стилю. У випадку SpaceHeadTR це включає використання геометричні форм, абстракцій, як ви можете бачити на банері.',
+      },
+    ],
   },
+
   {
     id: 'mertygraal-cs2',
     type: 'youtube',
@@ -186,6 +282,7 @@ export const feedItems: FeedItem[] = [
     size: 'long',
     thumbnail: 'https://img.youtube.com/vi/LYZhOpYn2tk/maxresdefault.jpg',
   },
+
   {
     id: 'sicko',
     type: 'article',
@@ -194,11 +291,14 @@ export const feedItems: FeedItem[] = [
     description: 'Sicko — це бренд одягу, створений репером Young Thug. Бренд став відомим завдяки своєму унікальному дизайну та стилю.',
     image: './src/link/content/créative web/sicko.png',
     size: 'short',
-    content: `Sicko — це бренд одягу, створений репером Young Thug. Бренд став відомим завдяки своєму унікальному дизайну та стилю, але особливо ще тому що вони заполонили інтернет своїми артами та постерами.`,
+    sections: [
+      {
+        text: 'Sicko — це бренд одягу, створений репером Young Thug. Бренд став відомим завдяки своєму унікальному дизайну та стилю, але особливо ще тому що вони заполонили інтернет своїми артами та постерами.',
+      },
+    ],
   },
 ]
 
-// ─── SIDEBAR ──────────────────────────────────────────────────────────────────
 export const sidebarItems: SidebarItem[] = [
   {
     id: 'gumroad-pack',

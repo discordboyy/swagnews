@@ -1,3 +1,4 @@
+// src/components/NewsCard.tsx
 import { useNavigate } from 'react-router-dom'
 import type { ArticleFeedItem, ExternalFeedItem } from './types'
 import "../css/new-style.css"; // основные стили

@@ -12,12 +12,6 @@ interface SharedCardFields {
   imagePosition?: 'top' | 'bottom'
 }
 
-export interface ArticleFeedItem extends SharedCardFields {
-  type:      'article'
-  bgStyle?:  boolean
-  content:   string
-}
-
 export interface ExternalFeedItem extends SharedCardFields {
   type: 'external'
   url:  string
@@ -44,4 +38,43 @@ export interface SidebarItem {
   platform: string
   date:     string
   url:      string
+}
+
+// ─── Article sections ─────────────────────────────────────────────────────────
+
+export interface ArticleSection {
+  heading?:     string
+  headingEmoji?: string
+  text?:        string
+  list?:        string[]
+  orderedList?: { text: string; url?: string }[]
+  connector?:   string
+}
+
+export interface InstagramEmbed {
+  url:      string
+  username: string
+}
+
+// ─── Feed items ───────────────────────────────────────────────────────────────
+
+interface SharedCardFields {
+  id:             string
+  size:           CardSize
+  title:          string
+  category:       string
+  description?:   string
+  image?:         string | null
+  emoji?:         string
+  imagePosition?: 'top' | 'bottom'
+}
+
+export interface ArticleFeedItem extends SharedCardFields {
+  type:       'article'
+  bgStyle?:   boolean
+  heroImage?: string
+  itemTitle?: string
+  instagram?: InstagramEmbed
+  sections?:  ArticleSection[]
+  content?:   string
 }
