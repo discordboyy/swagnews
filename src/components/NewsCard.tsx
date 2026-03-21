@@ -18,20 +18,39 @@ export default function NewsCard({ item }: Props) {
     }
   }
 
+  const containerClass =
+  item.type === 'article' && item.size === 'long'
+    ? 'long-container-youtube'
+    : 'short-container'
+
+  const style =
+  item.type === 'article' && item.bgStyle
+    ? {
+        background: `linear-gradient(to top, rgba(0,0,0,0.25), transparent), url(/link/content/another/offgodtate-1.jpg)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }
+    : {}
+  
   const imageEl = item.image ? (
     <img className="image-content" src={item.image} alt="" />
   ) : null
 
+  const innerClass =
+  item.type === 'article' && item.size === 'long'
+    ? 'content-section-long-container-youtube'
+    : 'content-section-short-container'
+
   return (
     <div
-      className="short-container"
+      className={containerClass}
       onClick={handleClick}
-      style={{ cursor: 'pointer' }}
+      style={{ cursor: 'pointer', ...style }}
       role="link"
       tabIndex={0}
       onKeyDown={(e) => e.key === 'Enter' && handleClick()}
     >
-      <div className="content-section-short-container">
+      <div className={innerClass}>
         {item.imagePosition !== 'bottom' && imageEl}
 
         <div className="title-section">

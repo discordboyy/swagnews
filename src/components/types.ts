@@ -32,6 +32,7 @@ export interface YouTubeFeedItem {
   views?:  string | null
   avatar:  string
   url:     string
+  thumbnail?: string
 }
 
 export type FeedItem = ArticleFeedItem | ExternalFeedItem | YouTubeFeedItem

@@ -16,7 +16,7 @@ function QuestionBanner() {
           <span>
             <img
               style={{ display: 'inline-flex', marginBottom: '-3px' }}
-              src="link/span/span-emoji 09.png"
+              src="./src/link/span/span-emoji 09.png"
               alt=""
             />
           </span>

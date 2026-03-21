@@ -50,7 +50,7 @@ export default function Header() {
         </a>
 
         <Link className="logo-position" to="/">
-          <img id="logo" src="link/SWAGNEWS logo.svg" alt="logo" />
+          <img id="logo" src="./src/link/SWAGNEWS logo.svg" alt="logo" />
         </Link>
 
         <a

@@ -1,3 +1,4 @@
+// src/components/YouTubeCard.tsx
 import type { YouTubeFeedItem } from './types'
 
 interface Props {
@@ -21,7 +22,13 @@ export default function YouTubeCard({ item }: Props) {
     <div
       className={containerClass}
       onClick={handleClick}
-      style={{ cursor: 'pointer' }}
+      style={{
+        cursor: 'pointer',
+        background: `linear-gradient(to top, rgba(0,0,0,0.8), transparent), url(${item.thumbnail})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
       role="link"
       tabIndex={0}
       onKeyDown={(e) => e.key === 'Enter' && handleClick()}
