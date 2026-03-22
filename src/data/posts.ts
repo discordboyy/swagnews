@@ -88,18 +88,6 @@ export const feedItems: FeedItem[] = [
   },
 
   {
-    id: 'mertygraal-zipka',
-    type: 'youtube',
-    channel: 'Mertygraal',
-    views: '57 переглядів',
-    title: 'zipka tshirts / créative web / мертіграл розповідає',
-    avatar: 'https://yt3.googleusercontent.com/wbEZxPk5AiwTk1XLVxIk4UpjE3fQNIPjihf0Io4gn33WjVKoG8q7tNIpivel2F_0YLSdgqQ6LQQ=s160-c-k-c0x00ffffff-no-rj',
-    url: 'https://youtu.be/_JZeWGITpyM?si=oGsb2XGf2xcZoWnw',
-    size: 'long',
-    thumbnail: 'https://img.youtube.com/vi/_JZeWGITpyM/maxresdefault.jpg',
-  },
-
-  {
     id: 'ai',
     type: 'article',
     category: 'креативні web',
