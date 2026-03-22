@@ -28,7 +28,7 @@ export default function NewsCard({ item }: Props) {
   const style =
   item.type === 'article' && item.bgStyle
     ? {
-        background: `linear-gradient(to top, rgba(0,0,0,0.25), transparent), url(../src/link/content/another/offgodtate-1.jpg)`,
+        background: `linear-gradient(to top, rgba(0,0,0,0.25), transparent), url(/swagnews/link/content/another/offgodtate-1.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }

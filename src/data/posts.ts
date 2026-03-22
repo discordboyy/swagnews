@@ -7,8 +7,8 @@ export const feedItems: FeedItem[] = [
     category: 'новини світу',
     title: 'Allkill1t анонсував новий альбом "mixxtales"',
     description: 'Реліз заплановано на 16 травня 2025 року. За попередньою інформацією, mixxtales включатиме 11 треків такі як..',
-    image: './src/link/content/another/MIXXTALES.png',
-    emoji: './src/link/span/span-emoji 10.png',
+    image: '/swagnews/link/content/another/MIXXTALES.png',
+    emoji: '/swagnews/link/span/span-emoji 10.png',
     size: 'short',
     itemTitle: 'Allkill1t анонсував новий альбом "mixxtales": реліз заплановано на 16 травня 2025 року',
     instagram: {
@@ -57,7 +57,7 @@ export const feedItems: FeedItem[] = [
     title: 'Spotify пофіксили неполадки',
     description: 'Аккаунт "Spotify Status", затвердив що вони вирішили проблеми та тепер все працює як треба.',
     image: 'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e2/7e/db/e27edb0a-a64b-480b-060d-231054de80ca/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/1200x600wa.png',
-    emoji: './src/link/span/span-emoji 08.png',
+    emoji: '/swagnews/link/span/span-emoji 08.png',
     size: 'short',
     url: 'https://x.com/SpotifyStatus/status/1912538521489051844',
   },
@@ -80,33 +80,33 @@ export const feedItems: FeedItem[] = [
     category: 'креативні web',
     title: 'Ai',
     description: 'Штучний інтелект революціонізує кодинг, дизайн, музику та бізнес, скорочуючи час роботи з місяців до секунд. Майбутнє за тими, хто ефективно інтегрує ШІ у свою діяльність.',
-    image: './src/link/content/créative web/ai.png',
-    emoji: './src/link/span/span-emoji 01.png',
+    image: '/swagnews/link/content/créative web/ai.png',
+    emoji: '/swagnews/link/span/span-emoji 01.png',
     size: 'short',
-    heroImage: './src/link/content/créative web/ai.png',
+    heroImage: '/swagnews/link/content/créative web/ai.png',
     itemTitle: 'AI тут й зараз.',
     sections: [
       {
         heading: 'кодинг',
-        headingEmoji: './src/link/span/span-emoji 03.png',
-        connector: './src/link/connector/connector (1).png',
+        headingEmoji: '/swagnews/link/span/span-emoji 03.png',
+        connector: '/swagnews/link/connector/connector (1).png',
         text: 'Раніше програмування було виключно ручною роботою, що вимагала знань мов кодування, алгоритмів і структур даних. Помилки в коді могли коштувати компаніям тисячі доларів, а їх виправлення займало багато часу. Проте сьогодні штучний інтелект докорінно змінює процес написання коду.\n\nІнструменти на основі ШІ, такі як GitHub Copilot, ChatGPT та Tabnine, допомагають розробникам автоматично дописувати код, знаходити помилки, пропонувати оптимальні рішення. Це скорочує час роботи програмістів і робить кодинг доступнішим для новачків.\n\nЗавдяки ШІ можна створювати вебсайти та застосунки в рази швидше.',
       },
       {
         heading: 'Швидкість створення контенту: дизайн, музика, графіка',
-        headingEmoji: './src/link/span/span-emoji 04.png',
-        connector: './src/link/connector/connector (2).png',
+        headingEmoji: '/swagnews/link/span/span-emoji 04.png',
+        connector: '/swagnews/link/connector/connector (2).png',
         text: 'Якщо раніше створення якісного дизайну займало дні або навіть тижні, то зараз ШІ може впоратися з цим завданням за лічені хвилини. Інструменти на базі нейромереж здатні генерувати логотипи, ілюстрації, шрифти, сайти та навіть відео.\n\nШІ-інструменти, такі як Midjourney, DALL-E, Runway та Adobe Firefly, дозволяють дизайнерам створювати високоякісні зображення та графічні елементи просто за допомогою текстових підказок.\n\nУ музичній індустрії ШІ також здійснив революцію. Сервіси на кшталт AIVA, Amper Music та Soundraw генерують композиції за заданими параметрами.',
       },
       {
         heading: 'як ШІ скорочує час роботи над проектами',
-        headingEmoji: './src/link/span/span-emoji 05.png',
-        connector: './src/link/connector/connector (3).png',
+        headingEmoji: '/swagnews/link/span/span-emoji 05.png',
+        connector: '/swagnews/link/connector/connector (3).png',
         text: 'Уявімо ситуацію: дизайнер має створити постер для рекламної кампанії. Раніше цей процес займав декілька днів – потрібно було продумати концепцію, підібрати кольори, намалювати макет, зробити правки. Тепер же достатньо описати ідею ШІ, і він миттєво згенерує декілька варіантів дизайну.\n\nТе ж саме стосується веброзробки. Якщо раніше створення сайту вимагало довгих годин роботи дизайнерів та кодерів, то тепер можна завантажити приклад бажаного стилю та отримати автоматично згенерований макет з готовим кодом.',
       },
       {
         heading: 'хто залишиться без ШІ, а хто адаптується',
-        headingEmoji: './src/link/span/span-emoji 06.png',
+        headingEmoji: '/swagnews/link/span/span-emoji 06.png',
         text: 'З розвитком ШІ суспільство розділиться на дві групи: тих, хто буде працювати без допомоги ШІ, і тих, хто інтегрує його у свої процеси.\n\nДруга група – це люди, які активно використовують штучний інтелект. AI-художники, AI-дизайнери, AI-програмісти та навіть AI-інженери будуть не просто працювати швидше, а й розширювати межі можливого.\n\nОчевидно, що майбутнє за тими, хто адаптується до нових технологій.',
       },
     ],
@@ -118,10 +118,10 @@ export const feedItems: FeedItem[] = [
     category: 'креативні web',
     title: 'Скетчі – ваш скарб',
     description: 'Скетчі – це основа будь-якої творчої професії, і вони мають величезну цінність у мистецтві, дизайні, моушн-дизайні, анімації, коміксах та інших сферах.',
-    image: './src/link/content/créative web/Скетчі – ваш скарб!.png',
-    emoji: './src/link/span/span-emoji 02.png',
+    image: '/swagnews/link/content/créative web/Скетчі – ваш скарб!.png',
+    emoji: '/swagnews/link/span/span-emoji 02.png',
     size: 'short',
-    heroImage: './src/link/content/créative web/Скетчі – ваш скарб! (1).png',
+    heroImage: '/swagnews/link/content/créative web/Скетчі – ваш скарб! (1).png',
     itemTitle: 'Скетчі – ваш скарб!',
     sections: [
       {
@@ -206,7 +206,7 @@ export const feedItems: FeedItem[] = [
     category: 'креативні web',
     title: 'Як знайти референси?',
     description: 'Ви ніколи не зможете швидко знайти референси які вам дійсно підійдуть у портфоліо особливо коли треба знайти дійсно гарне натхнення. Запамятайте Pinterest, Are.na, Twitter, Tumblr, Dribbble чи Awwwards, ви ніколи не зможете знайти усі діаманти просто нічого не шукаючи...',
-    image: './src/link/content/créative web/Як знайти референси для свого портфоліо.png',
+    image: '/swagnews/link/content/créative web/Як знайти референси для свого портфоліо.png',
     imagePosition: 'bottom',
     size: 'short',
     sections: [
@@ -234,7 +234,7 @@ export const feedItems: FeedItem[] = [
     category: 'креативні web',
     title: 'Айдентика, або корпоративний ідентифікаційний стиль',
     description: 'Включає логотипи, кольори, шрифти, графічні елементи та інші візуальні компоненти, які використовуються для ідентифікації бренду. Це створює єдиний зовнішній вигляд компанії...',
-    image: './src/link/content/créative web/Що таке айдентика.png',
+    image: '/swagnews/link/content/créative web/Що таке айдентика.png',
     size: 'short',
     sections: [
       {
@@ -261,7 +261,7 @@ export const feedItems: FeedItem[] = [
     category: 'креативні web',
     title: 'Що таке Стиль?',
     description: 'СТИЛь це деталі які повторюються, від роботи до роботи й виділяють цим роботи художника, надають свого стилю.',
-    image: './src/link/content/créative web/style.png',
+    image: '/swagnews/link/content/créative web/style.png',
     imagePosition: 'bottom',
     size: 'short',
     sections: [
@@ -289,7 +289,7 @@ export const feedItems: FeedItem[] = [
     category: 'креативні web',
     title: 'Sicko',
     description: 'Sicko — це бренд одягу, створений репером Young Thug. Бренд став відомим завдяки своєму унікальному дизайну та стилю.',
-    image: './src/link/content/créative web/sicko.png',
+    image: '/swagnews/link/content/créative web/sicko.png',
     size: 'short',
     sections: [
       {
@@ -302,7 +302,7 @@ export const feedItems: FeedItem[] = [
 export const sidebarItems: SidebarItem[] = [
   {
     id: 'gumroad-pack',
-    image: './src/link/content/créative web/Cover gumroad (3).png',
+    image: '/swagnews/link/content/créative web/Cover gumroad (3).png',
     title: 'Мертіграл продає свій пак з мокапами',
     platform: 'Gumroad',
     date: '14/04/2025',
@@ -310,7 +310,7 @@ export const sidebarItems: SidebarItem[] = [
   },
   {
     id: 'brand-tg',
-    image: './src/link/content/créative web/INDEPENDENT INTERNATIONAL UKRAINIAN KIDS.png',
+    image: '/swagnews/link/content/créative web/INDEPENDENT INTERNATIONAL UKRAINIAN KIDS.png',
     title: 'Мертіграл опублікував свій майбутній бренд у тг',
     platform: 'telegram',
     date: '10/04/2025',
@@ -318,7 +318,7 @@ export const sidebarItems: SidebarItem[] = [
   },
   {
     id: 'csgo-work',
-    image: './src/link/content/créative web/lol relationshit.png',
+    image: '/swagnews/link/content/créative web/lol relationshit.png',
     title: 'Остання робота з теми csgo',
     platform: 'Pinterest',
     date: '05/04/2025',
