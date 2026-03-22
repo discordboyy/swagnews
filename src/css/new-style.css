@@ -1,0 +1,191 @@
+
+
+#offgod-adidas-inner, #offgod-adidas-title-section {
+    display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end;
+}
+
+#offgod-adidas-h1 {
+    color: white;
+}
+
+
+
+
+
+
+
+.long-container-youtube {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    filter 0.35s ease;
+  will-change: transform;
+}
+
+/* Hover эффект */
+.long-container-youtube:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.171);
+  filter: brightness(1.05);
+}
+
+/* Лёгкий glow-оверлей */
+.long-container-youtube::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.15), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.long-container-youtube:hover::after {
+  opacity: 1;
+}
+
+/* Эффект нажатия */
+.long-container-youtube:active {
+  transform: scale(0.97);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Текст анимация */
+.title-section h1,
+.title-section h2 {
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.long-container-youtube:hover .title-section h1 {
+  transform: translateY(-4px);
+}
+
+.long-container-youtube:hover .title-section h2 {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+
+
+
+
+.short-container {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Hover */
+.short-container:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.11);
+}
+
+/* Нажатие */
+.short-container:active {
+  transform: scale(0.97);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.13);
+}
+
+/* Зум картинки */
+.short-container .image-content {
+  transition: transform 0.5s ease;
+}
+
+.short-container:hover .image-content {
+  transform: scale(1.08);
+}
+
+/* Текст */
+.short-container .title-section h1,
+.short-container .title-section h2,
+.short-container .content-description-short-container {
+  transition: all 0.35s ease;
+}
+
+.short-container:hover h1 {
+  transform: translateY(-3px);
+}
+
+.short-container:hover h2 {
+  opacity: 0.8;
+}
+
+.short-container:hover .content-description-short-container {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+
+
+
+
+.short-container-youtube {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    filter 0.35s ease;
+}
+
+/* Hover */
+.short-container-youtube:hover {
+  transform: scale(1.03);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.164);
+  filter: brightness(1.1);
+}
+
+/* Нажатие */
+.short-container-youtube:active {
+  transform: scale(0.96);
+}
+
+/* Затемнение overlay */
+.short-container-youtube::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.61), transparent);
+  opacity: 0.85;
+  transition: opacity 0.35s ease;
+}
+
+.short-container-youtube:hover::after {
+  opacity: 0.6;
+}
+
+/* Контент поверх */
+.short-container-youtube .title-section {
+  position: relative;
+  z-index: 2;
+}
+
+/* Анимация текста */
+.short-container-youtube h1,
+.short-container-youtube h2 {
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.short-container-youtube:hover h1 {
+  transform: translateY(-4px);
+}
+
+.short-container-youtube:hover h2 {
+  opacity: 0.85;
+}
+
+/* Аватар */
+.icon-youtube {
+  transition: transform 0.35s ease;
+}
+
+.short-container-youtube:hover .icon-youtube {
+  transform: scale(1.1);
+}

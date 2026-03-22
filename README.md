@@ -1,97 +1,73 @@
-# SWAGNEWS — React
+# React + TypeScript + Vite
 
-Migrated from static HTML to React + Vite. Hosted on GitHub Pages.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Stack
+Currently, two official plugins are available:
 
-- React 18
-- React Router v6 (HashRouter — works on GitHub Pages without a server)
-- Vite 5
-- DM Sans + Bebas Neue + DM Mono fonts
-- No UI library — pure custom CSS
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Project structure
+## React Compiler
 
-```
-src/
-  components/
-    Header.jsx       ← sticky header with logo + crypto tickers
-    Footer.jsx       ← contacts, socials, partner logo
-    NewsCard.jsx     ← article / external link card
-    YouTubeCard.jsx  ← YouTube video card
-    Sidebar.jsx      ← créative web sidebar
-    CategoryTag.jsx  ← colored category pill
-  pages/
-    Home.jsx         ← main feed (interleaved articles + youtube)
-    Article.jsx      ← single article view
-  data/
-    posts.js         ← ALL content lives here (edit this to add posts)
-  App.jsx
-  main.jsx
-  index.css
-```
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Setup
+## Expanding the ESLint configuration
 
-```bash
-npm install
-npm run dev
-```
-
-## Add a new post
-
-Open `src/data/posts.js` and add an object to the `posts` array:
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
 ```js
-{
-  id: 'my-post',              // unique slug (used in URL)
-  type: 'article',            // 'article' | 'external'
-  category: 'креативні web', // affects the color tag
-  title: 'Post title',
-  excerpt: 'Short description shown on the feed',
-  image: 'https://...',       // or null
-  date: '2025-05-01',
-  content: `
-    Your article text here.
-    Supports paragraphs and numbered lists.
-  `,
-}
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
 
-For an external link (opens in new tab, no article page):
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
 ```js
-{
-  id: 'some-link',
-  type: 'external',
-  category: 'новини світу',
-  title: 'Title',
-  excerpt: 'Description',
-  image: 'https://...',
-  date: '2025-05-01',
-  url: 'https://...',    // ← external URL
-}
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
-
-## Deploy to GitHub Pages
-
-### Option A — GitHub Actions (recommended)
-
-1. Push to GitHub
-2. Go to **Settings → Pages**
-3. Set source to **GitHub Actions**
-4. Push anything to `main` — it deploys automatically
-
-### Option B — manual with gh-pages
-
-```bash
-npm run deploy
-```
-
-## URLs
-
-- Dev:  `http://localhost:5173`
-- Live: `https://discordboyy.github.io/swagnews/`
-
-Routes use hash mode so GitHub Pages works without 404 redirects:
-- `/#/` → home feed
-- `/#/post/mixxtales` → article page
