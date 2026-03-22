@@ -71,6 +71,7 @@ interface SharedCardFields {
 
 export interface ArticleFeedItem extends SharedCardFields {
   type:       'article'
+  url?:       string
   bgStyle?:   boolean
   heroImage?: string
   itemTitle?: string

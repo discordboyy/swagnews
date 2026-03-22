@@ -1,6 +1,31 @@
 import type { FeedItem, SidebarItem } from '../components/types'
 
 export const feedItems: FeedItem[] = [
+
+  {
+    id: 'hormuz-crisis',
+    type: 'article',
+    category: 'геополітика',
+    title: 'Наступні 48 годин вирішать долю війни США–Іран',
+    description: 'Трамп дав Ірану ультиматум щодо Ормузької протоки. У відповідь Тегеран погрожує повністю її закрити. На кону — 20% світової нафти, ринки та економіка США.',
+    image: 'https://i.pinimg.com/originals/53/87/90/53879031320bdfb2f77e26dd4dca0a43.gif',
+    emoji: '/swagnews/link/span/span-emoji 01.png',
+    size: 'short',
+    url: 'https://x.com/cryptorover/status/2035746529055580440?s=20',
+  },
+
+  {
+      id: 'pollyceremony-kyN0GFo7Q',
+      type: 'youtube',
+      channel: 'PollyCeremony',
+      views: '472 переглядів',
+      title: 'За що ми любимо СКРЯБІНА',
+      avatar: 'https://yt3.googleusercontent.com/VHkr2QF5XNLVP-o6b5-SuLWBT4Vaa99Od21uvQcfBaYUfAkbKibkw-vFcwPf0vfoHmfQRayYWYU=s160-c-k-c0x00ffffff-no-rj',
+      url: 'https://www.youtube.com/watch?v=kyN0--GFo7Q',
+      size: 'long',
+      thumbnail: 'https://i.ytimg.com/vi/kyN0--GFo7Q/maxresdefault.jpg',
+  },
+
   {
     id: 'mixxtales',
     type: 'article',

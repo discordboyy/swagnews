@@ -13,6 +13,13 @@ export default function NewsCard({ item }: Props) {
   const navigate = useNavigate()
 
   const handleClick = () => {
+    // 🔥 если есть url — всегда открываем его
+    if ('url' in item && item.url) {
+      window.open(item.url, '_blank', 'noopener,noreferrer')
+      return
+    }
+
+    // старое поведение
     if (item.type === 'external') {
       window.open(item.url, '_blank', 'noopener,noreferrer')
     } else {
