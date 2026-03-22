@@ -1,10 +1,10 @@
-import { sidebarItems } from '../data/posts.ts'
+// src/components/Sidebar.tsx
 import type { SidebarItem } from './types'
 
-export default function Sidebar() {
+export default function Sidebar({ items }: { items: SidebarItem[] }) {
   return (
     <section className="catalog-third-item">
-      {sidebarItems.map((item: SidebarItem) => (
+      {items.map((item: SidebarItem) => (
         <a
           key={item.id}
           href={item.url}

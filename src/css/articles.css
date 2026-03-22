@@ -1,0 +1,66 @@
+#mertygraal-youtube-1 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(https://img.youtube.com/vi/dEEc1tsphE4/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+
+#mertygraal-youtube-2 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(https://img.youtube.com/vi/LYZhOpYn2tk/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+
+#mertygraal-youtube-3 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(https://img.youtube.com/vi/fAvndUbSNP4/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+
+#mertygraal-youtube-4{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(https://img.youtube.com/vi/_JZeWGITpyM/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+
+
+
+#pollyceremony-youtube-1 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(https://img.youtube.com/vi/GHjb1sIAvbM/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+
+#pollyceremony-youtube-2 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(https://img.youtube.com/vi/X8qEa6H-9tI/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+
+#minecraft-1 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent), url(../link/content/minecraft/mine-server.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+
+#offgod-1 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.25), transparent),;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transition only the background image */
+}
+

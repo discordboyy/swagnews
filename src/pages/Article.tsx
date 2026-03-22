@@ -1,3 +1,4 @@
+// src/pages/Article.tsx
 import { useParams, useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import { feedItems } from '../data/posts.ts'
@@ -5,6 +6,16 @@ import type { ArticleFeedItem, ArticleSection } from '../components/types'
 import Sidebar from '../components/Sidebar'
 import NewsCard from '../components/NewsCard'
 import YouTubeCard from '../components/YouTubeCard'
+import { sidebarItemsExtra, sidebarItemsMain, sidebarItemsFirst } from '../data/sidebar'
+import type { FeedItem } from '../components/types'
+
+function FeedItemComponent({ item }: { item: FeedItem }) {
+  if (item.type === 'youtube') return <YouTubeCard item={item} />
+  return <NewsCard item={item} />
+}
+
+// After index 1 (nettspend), sidebar renders, then the rest of the feed
+const SIDEBAR_BREAK_AFTER_INDEX = 1
 
 function Section({ s, index }: { s: ArticleSection; index: number }) {
   return (
@@ -80,9 +91,11 @@ export default function Article() {
 
   const article = item as ArticleFeedItem
 
-  const related = feedItems
-    .filter((f) => f.id !== article.id)
-    .slice(0, 8)
+  const filteredFeed = feedItems.filter((f) => f.id !== article.id)
+
+  const firstSection = filteredFeed.slice(0, 2)
+  const middleSection = filteredFeed.slice(2, 2)
+  const related = filteredFeed.slice(2)
 
   return (
     <main>
@@ -143,7 +156,17 @@ export default function Article() {
           </button>
         </div>
 
-        <Sidebar />
+        <div className="small-section">
+          {/* ПЕРШИЙ SIDEBAR */}
+          <Sidebar items={sidebarItemsFirst} />
+
+          {firstSection.map((item) => (
+            <FeedItemComponent key={item.id} item={item} />
+          ))}
+        
+          {/* ДРУГИЙ SIDEBAR */}
+          <Sidebar items={sidebarItemsMain} />
+        </div>
 
         {/* ── related feed — reuses the exact same components as Home ── */}
         <div className="small-section">
@@ -152,6 +175,9 @@ export default function Article() {
             return <NewsCard key={f.id} item={f} />
           })}
         </div>
+
+        {/* ТРЕТІЙ SIDEBAR */}
+        <Sidebar items={sidebarItemsExtra} />
 
       </div>
     </main>

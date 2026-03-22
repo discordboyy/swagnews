@@ -1,7 +1,9 @@
+// src/pages/Home.tsx
 import { feedItems } from '../data/posts.ts'
 import type { FeedItem } from '../components/types'
 import NewsCard from '../components/NewsCard'
 import YouTubeCard from '../components/YouTubeCard'
+import { sidebarItemsMain, sidebarItemsExtra, sidebarItemsFirst } from '../data/sidebar.ts'
 import Sidebar from '../components/Sidebar'
 
 // After index 1 (nettspend), sidebar renders, then the rest of the feed
@@ -47,18 +49,26 @@ export default function Home() {
 
         <div className="small-section">
           <QuestionBanner />
+
+          {/* ПЕРШИЙ SIDEBAR */}
+          <Sidebar items={sidebarItemsFirst} />
+
           {firstSection.map((item) => (
             <FeedItem key={item.id} item={item} />
           ))}
-        </div>
 
-        <Sidebar />
+          {/* ДРУГИЙ SIDEBAR */}
+          <Sidebar items={sidebarItemsMain} />
+        </div>
 
         <div className="small-section">
           {secondSection.map((item) => (
             <FeedItem key={item.id} item={item} />
           ))}
         </div>
+
+        {/* ТРЕТІЙ SIDEBAR */}
+        <Sidebar items={sidebarItemsExtra} />
 
       </div>
     </main>
