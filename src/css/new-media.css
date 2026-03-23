@@ -3,3 +3,9 @@
     zoom: 0.927;
   }
 }
+
+@media screen and (max-width: 1320px) {
+  .catalog-third-item {
+    zoom: 0.742;
+  }
+}
