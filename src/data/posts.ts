@@ -174,6 +174,7 @@ export const feedItems: FeedItem[] = [
     image: null,
     size: 'long',
     bgStyle: true,
+    bgImage: '/swagnews/link/content/another/offgodtate-1.jpg',
     sections: [{ text: 'Нова колаборація OFFGOD:TATE x adidas Originals 2025.' }],
   },
 

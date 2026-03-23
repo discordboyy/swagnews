@@ -73,6 +73,7 @@ export interface ArticleFeedItem extends SharedCardFields {
   type:       'article'
   url?:       string
   bgStyle?:   boolean
+  bgImage?: string
   heroImage?: string
   itemTitle?: string
   instagram?: InstagramEmbed
