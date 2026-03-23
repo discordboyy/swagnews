@@ -2,10 +2,18 @@
   .catalog-third-item {
     zoom: 0.927;
   }
+
+  .long-container-youtube, .short-container, .short-container-youtube {
+    zoom: 0.927;
+  }
 }
 
 @media screen and (max-width: 1320px) {
   .catalog-third-item {
+    zoom: 0.71;
+  }
+
+  .long-container-youtube, .short-container, .short-container-youtube {
     zoom: 0.71;
   }
 }
