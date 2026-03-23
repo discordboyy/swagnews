@@ -3,6 +3,18 @@ import type { FeedItem, SidebarItem } from '../components/types'
 export const feedItems: FeedItem[] = [
 
   {
+    "id": "gold-price-drop",
+    "type": "youtube",
+    "channel": "новини фінансів",
+    "views": "",
+    "title": "Ціна на золото різко впала: GOLD знизився до 4,243.420 USD, втративши 5.53% на відкритті ринку.",
+    "avatar": "",
+    "url": "https://www.tradingview.com/symbols/GOLD/",
+    "size": "short",
+    "thumbnail": "https://s3-symbol-logo.tradingview.com/metal/gold--600.png"
+  },
+
+  {
     id: 'rich-amiri-grit-and-grace',
     type: 'youtube',
     channel: 'новини світу музики',
