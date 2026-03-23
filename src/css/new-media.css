@@ -6,12 +6,12 @@
 
 @media screen and (max-width: 1320px) {
   .catalog-third-item {
-    zoom: 0.742;
+    zoom: 0.71;
   }
 }
 
 @media screen and (max-width: 1100px) {
   .catalog-third-item {
-    zoom: 0.667;
+    zoom: 0.666;
   }
 }
