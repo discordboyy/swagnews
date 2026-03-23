@@ -5,6 +5,7 @@ import "./css/new-style.css"; // стили
 import "./css/articles.css"; // стили
 import "./css/sidebars.css"; // стили
 import "./css/new-media.css"; // стили
+import "./css/question.css"; // стили
 import App from './App.tsx' 
 
 createRoot(document.getElementById('root')!).render(
