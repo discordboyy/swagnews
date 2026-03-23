@@ -3,28 +3,15 @@ import type { FeedItem, SidebarItem } from '../components/types'
 export const feedItems: FeedItem[] = [
 
   {
-    "id": "caydeplanet-minecraft-art",
-    "type": "article",
-    "category": "соцмережі",
-    "title": "Cayde.wav опублікував нову картину з порталом з Minecraft",
-    "description": "",
-    "image": "/swagnews/link/content/another/caydeplanet-mine.png",
+    "id": "caydeplanet-minecraft-post",
+    "type": "youtube",
+    "channel": "соцмережі",
+    "views": "52,8K",
+    "title": "Cayde.wav опублікував нову картину з порталом Minecraft на галявині та поділився постом у Twitter.",
+    "avatar": "",
+    "url": "https://x.com/caydeplanet/status/2035772202285510844?s=20",
     "size": "long",
-    "bgStyle": true,
-    "sections": [
-      {
-        "text": "Художник Cayde.wav (@caydeplanet) поділився новим постом у Twitter, де показав олійний живопис із порталом з Minecraft на галявині."
-      },
-      {
-        "text": "У дописі він зазначив, що знаходиться в пошуках представництва, а також повідомив, що принти картини доступні на його сайті KunstnerCayde.com."
-      },
-      {
-        "text": "Публікація зібрала близько 52,8 тисяч переглядів (станом на 22 березня 2026 року, 18:34)."
-      },
-      {
-        "text": "Посилання на пост: https://x.com/caydeplanet/status/2035772202285510844?s=20"
-      }
-    ]
+    "thumbnail": "https://pbs.twimg.com/media/HECEBrDXQAERpHY?format=jpg&name=large"
   },
 
   {
