@@ -1,3 +1,5 @@
-.catalog-third-item {
-  zoom: 0.8
+@media screen and (max-width: 1440px) {
+  .catalog-third-item {
+    zoom: 0.8
+  }
 }
