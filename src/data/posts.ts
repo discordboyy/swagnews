@@ -8,7 +8,7 @@ export const feedItems: FeedItem[] = [
     "channel": "соцмережі",
     "views": "52,8K",
     "title": "Cayde.wav опублікував нову картину з порталом Minecraft на галявині та поділився постом у Twitter.",
-    "avatar": "",
+    "avatar": "https://pbs.twimg.com/profile_images/1958945942972858368/rjX2h5Al_400x400.jpg",
     "url": "https://x.com/caydeplanet/status/2035772202285510844?s=20",
     "size": "long",
     "thumbnail": "https://pbs.twimg.com/media/HECEBrDXQAERpHY?format=jpg&name=large"
