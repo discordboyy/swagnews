@@ -5,6 +5,7 @@ import NewsCard from '../components/NewsCard'
 import YouTubeCard from '../components/YouTubeCard'
 import { sidebarItemsMain, sidebarItemsExtra, sidebarItemsFirst } from '../data/sidebar.ts'
 import Sidebar from '../components/Sidebar'
+import GameWidget from '../components/GameWidget'
 
 // After index 1 (nettspend), sidebar renders, then the rest of the feed
 const SIDEBAR_BREAK_AFTER_INDEX = 1
@@ -51,7 +52,7 @@ export default function Home() {
           <QuestionBanner />
 
           {/* ПЕРШИЙ SIDEBAR */}
-          <Sidebar items={sidebarItemsFirst} />
+          <GameWidget items={sidebarItemsFirst} />
 
           {firstSection.map((item) => (
             <FeedItem key={item.id} item={item} />
