@@ -3,6 +3,30 @@ import type { FeedItem, SidebarItem } from '../components/types'
 export const feedItems: FeedItem[] = [
 
   {
+    "id": "caydeplanet-minecraft-post",
+    "type": "youtube",
+    "channel": "соцмережі",
+    "views": "52,8K",
+    "title": "Cayde.wav опублікував нову картину з порталом Minecraft на галявині та поділився постом у Twitter.",
+    "avatar": "https://pbs.twimg.com/profile_images/1958945942972858368/rjX2h5Al_400x400.jpg",
+    "url": "https://x.com/caydeplanet/status/2035772202285510844?s=20",
+    "size": "long",
+    "thumbnail": "https://pbs.twimg.com/media/HECEBrDXQAERpHY?format=jpg&name=large"
+  },
+
+  {
+    "id": "gold-price-drop",
+    "type": "youtube",
+    "channel": "новини фінансів",
+    "views": "",
+    "title": "Ціна на золото різко впала: GOLD знизився до 4,243.420 USD, втративши 5.53% на відкритті ринку.",
+    "avatar": "",
+    "url": "https://www.tradingview.com/symbols/GOLD/",
+    "size": "short",
+    "thumbnail": "https://s3-symbol-logo.tradingview.com/metal/gold--600.png"
+  },
+
+  {
     id: 'rich-amiri-grit-and-grace',
     type: 'youtube',
     channel: 'новини світу музики',

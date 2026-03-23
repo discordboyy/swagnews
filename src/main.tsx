@@ -4,7 +4,8 @@ import "./css/style.css"; // основные стили
 import "./css/new-style.css"; // стили
 import "./css/articles.css"; // стили
 import "./css/sidebars.css"; // стили
-import App from './App.tsx'
+import "./css/new-media.css"; // стили
+import App from './App.tsx' 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
