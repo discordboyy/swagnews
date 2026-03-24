@@ -3,6 +3,30 @@ import type { FeedItem, SidebarItem } from '../components/types'
 export const feedItems: FeedItem[] = [
 
   {
+    "id": "discord-linux-vulkan",
+    "type": "youtube",
+    "channel": "Wumpus Central",
+    "views": "194,1k",
+    "title": "ОНОВЛЕННЯ DISCORD\n• Discord працює над покращенням стрімінгу на Linux\n• Використання Vulkan API для кращої продуктивності\n• Може покращити демонстрацію екрана\n• Більш плавне відео та менша затримка",
+    "avatar": "https://pbs.twimg.com/profile_images/1776327141015072768/I__OpXqD_400x400.jpg",
+    "url": "https://x.com/WumpusCentral/status/2036132154862674074?s=20",
+    "size": "short",
+    "thumbnail": "https://pbs.twimg.com/media/HEHKMq6W4AAYtme?format=jpg&name=medium"
+  },
+
+  {
+    "id": "regular-show-lost-tapes",
+    "type": "youtube",
+    "channel": "Cartoon Network",
+    "views": "3 mil",
+    "title": "НОВИЙ СЕРІАЛ REGULAR SHOW\n• «Regular Show: The Lost Tapes» анонсовано\n• Премʼєра 11 травня на Cartoon Network\n• Повернення улюблених персонажів\n• Новий контент у стилі ретро VHS 📼",
+    "avatar": "https://pbs.twimg.com/profile_images/1881824986144419840/ernB52lN_400x400.png",
+    "url": "https://x.com/cartoonnetwork/status/2036065621473890633?s=20",
+    "size": "long",
+    "thumbnail": "https://pbs.twimg.com/media/HEGO4FKW8AAMw-n?format=jpg&name=large"
+  },
+
+  {
     "id": "minecraft-theme-park",
     "type": "youtube",
     "channel": "Dexerto",

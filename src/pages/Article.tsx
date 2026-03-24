@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { feedItems } from '../data/posts.ts'
 import type { ArticleFeedItem, ArticleSection } from '../components/types'
 import Sidebar from '../components/Sidebar'
+import GameWidget from '../components/GameWidget'
 import NewsCard from '../components/NewsCard'
 import YouTubeCard from '../components/YouTubeCard'
 import { sidebarItemsExtra, sidebarItemsMain, sidebarItemsFirst } from '../data/sidebar'
@@ -93,9 +94,9 @@ export default function Article() {
 
   const filteredFeed = feedItems.filter((f) => f.id !== article.id)
 
-  const firstSection = filteredFeed.slice(0, 2)
-  const middleSection = filteredFeed.slice(2, 2)
-  const related = filteredFeed.slice(2)
+  const firstSection  = filteredFeed.slice(0, 2)
+  const middleSection = filteredFeed.slice(2, 4)
+  const related       = filteredFeed.slice(4)
 
   return (
     <main>
@@ -157,13 +158,19 @@ export default function Article() {
         </div>
 
         <div className="small-section">
-          {/* ПЕРШИЙ SIDEBAR */}
-          <Sidebar items={sidebarItemsFirst} />
 
           {firstSection.map((item) => (
             <FeedItemComponent key={item.id} item={item} />
           ))}
-        
+
+          {/* ПЕРШИЙ SIDEBAR */}
+          <GameWidget items={sidebarItemsFirst} />
+
+          {/* 🆕 MID SECTION */}
+          {middleSection.map((item) => (
+            <FeedItemComponent key={item.id} item={item} />
+          ))}
+
           {/* ДРУГИЙ SIDEBAR */}
           <Sidebar items={sidebarItemsMain} />
         </div>

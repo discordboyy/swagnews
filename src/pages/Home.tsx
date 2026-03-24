@@ -42,7 +42,8 @@ function FeedItem({ item }: { item: FeedItem }) {
 
 export default function Home() {
   const firstSection  = feedItems.slice(0, SIDEBAR_BREAK_AFTER_INDEX + 1)
-  const secondSection = feedItems.slice(SIDEBAR_BREAK_AFTER_INDEX + 1)
+  const midSection    = feedItems.slice(SIDEBAR_BREAK_AFTER_INDEX + 1, SIDEBAR_BREAK_AFTER_INDEX + 3)
+  const secondSection = feedItems.slice(SIDEBAR_BREAK_AFTER_INDEX + 3)
 
   return (
     <main>
@@ -51,12 +52,19 @@ export default function Home() {
         <div className="small-section">
           <QuestionBanner />
 
-          {/* ПЕРШИЙ SIDEBAR */}
-          <GameWidget items={sidebarItemsFirst} />
-
           {firstSection.map((item) => (
             <FeedItem key={item.id} item={item} />
           ))}
+
+          {/* ПЕРШИЙ SIDEBAR */}
+          <GameWidget items={sidebarItemsFirst} />
+
+          {/* MID SECTION (2 items) */}
+          <div className="small-section">
+            {midSection.map((item) => (
+              <FeedItem key={item.id} item={item} />
+            ))}
+          </div>
 
           {/* ДРУГИЙ SIDEBAR */}
           <Sidebar items={sidebarItemsMain} />
