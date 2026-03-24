@@ -3,6 +3,30 @@ import type { FeedItem, SidebarItem } from '../components/types'
 export const feedItems: FeedItem[] = [
 
   {
+    "id": "minecraft-theme-park",
+    "type": "youtube",
+    "channel": "Dexerto",
+    "views": "336,3k",
+    "title": "Паркова зона Minecraft відкриється у Великій Британії наступного року • «Minecraft World» буде у Chessington World of Adventures • Включатиме атракціони • Зустрічі з мобами • Їжу в стилі Minecraft",
+    "avatar": "https://pbs.twimg.com/profile_images/1714301666445402112/5U5myYFv_400x400.jpg",
+    "url": "https://x.com/Dexerto/status/2036016306248450070?s=20",
+    "size": "long",
+    "thumbnail": "https://pbs.twimg.com/media/HEFiCC8WYAArv3i?format=jpg&name=medium"
+  },
+
+  {
+    "id": "fortnite-hotfix",
+    "type": "youtube",
+    "channel": "HYPEX",
+    "views": "194,5k",
+    "title": "НОВИЙ HOTFIX FORTNITE\n• Максимальна кількість Overdrive Grenade збільшена (4 → 6)\n• Потужність запуску Overdrive Grenade збільшена (+17%)\n• Кількість Overdrive Grenade при дропі збільшена (2 → 3)\n• Підвищена ймовірність Power Gloves у скринях\n• Зменшено початковий розмір кола Шторму",
+    "avatar": "https://pbs.twimg.com/profile_images/1680830035639369730/0BG8cBZa_400x400.jpg",
+    "url": "https://x.com/HYPEX/status/2036225658464981285?s=20",
+    "size": "short",
+    "thumbnail": "https://pbs.twimg.com/media/HEIbYzdaUAABaEb?format=png&name=900x900"
+  },
+
+  {
     "id": "caydeplanet-minecraft-post",
     "type": "youtube",
     "channel": "соцмережі",
