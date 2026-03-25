@@ -967,7 +967,7 @@ h3 {
         transform: scale(1.05);
     }
     
-    .catalog-item {
+    .catalog-third-item .catalog-item {
         width: 47%;
         margin-bottom: 25px;
     }

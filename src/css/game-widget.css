@@ -39,3 +39,28 @@
     padding: 50px;
     overflow: visible;
 }
+
+@media screen and (max-width: 1250px) {
+  /* группа карточек внутри слайда */
+  .game-widget .slide-group {
+    grid-template-columns: repeat(2, 1fr); /* 2 в ряд */
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  /* группа карточек внутри слайда */
+  .slide-group .catalog-item {
+    width: 100%;
+  }
+
+  .game-widget .slide-group {
+    width: 80%;
+  }
+}

@@ -1,5 +1,5 @@
 @media screen and (max-width: 1440px) {
-  .catalog-third-item {
+  .catalog-third-item, .slide-group {
     zoom: 0.927;
   }
 
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 1320px) {
-  .catalog-third-item {
+  .catalog-third-item, .slide-group {
     zoom: 0.71;
   }
 
@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .catalog-third-item {
+  .catalog-third-item, .slide-group {
     zoom: 0.666;
   }
 }
