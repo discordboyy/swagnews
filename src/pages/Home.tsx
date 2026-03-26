@@ -6,6 +6,7 @@ import YouTubeCard from '../components/YouTubeCard'
 import { sidebarItemsMain, sidebarItemsExtra, sidebarItemsFirst } from '../data/sidebar.ts'
 import Sidebar from '../components/Sidebar'
 import GameWidget from '../components/GameWidget'
+import "../css/logo.css"
 
 // After index 1 (nettspend), sidebar renders, then the rest of the feed
 const SIDEBAR_BREAK_AFTER_INDEX = 1

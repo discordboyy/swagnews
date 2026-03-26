@@ -39,7 +39,7 @@ export default function Footer() {
             <p className="question-description">SWAGNEWS &amp; créative web</p>
           </div>
           <a href="https://t.me/creativewebtg" className="button-contacts" target="_blank" rel="noopener noreferrer">
-            <img className="logo" src="/swagnews/link/créative-web-logo.svg" alt="créative web logo" />
+            <img className="logo" src="/swagnews/link/creative-web-logo.svg" alt="créative web logo" />
           </a>
         </div>
       </div>
