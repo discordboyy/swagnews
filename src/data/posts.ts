@@ -3,6 +3,30 @@ import type { FeedItem, SidebarItem } from '../components/types'
 export const feedItems: FeedItem[] = [
 
   {
+    "id": "sora-shutdown",
+    "type": "youtube",
+    "channel": "Sora",
+    "views": "42,5 млн",
+    "title": "ЗАКРИТТЯ SORA: додаток Sora припиняє роботу, команда подякувала користувачам за творчість і підтримку та пообіцяла незабаром надати деталі щодо термінів закриття, API і можливості збереження ваших робіт",
+    "avatar": "https://pbs.twimg.com/profile_images/1983301834489114630/RtJHHC7d_400x400.jpg",
+    "url": "https://x.com/soraofficialapp/status/2036546752535470382?s=20",
+    "size": "short",
+    "thumbnail": "https://i.ytimg.com/vi/gzneGhpXwjU/maxresdefault.jpg"
+  },
+  
+  {
+    "id": "minecraft-tiny-takeover",
+    "type": "youtube",
+    "channel": "Minecraft",
+    "views": "1,8 млн",
+    "title": "ОНОВЛЕННЯ MINECRAFT: подія Tiny Takeover вже доступна в грі, додаючи маленькі версії мобів у різних біомах, більше взаємодії, колекціонування та ще більше милоти у світі Minecraft",
+    "avatar": "https://pbs.twimg.com/profile_images/2028865530401337344/SlCKJUWN_400x400.jpg",
+    "url": "https://msft.it/6019QtO8N",
+    "size": "long",
+    "thumbnail": "https://pbs.twimg.com/tweet_video_thumb/HEMBdGZaIAIWWQc.jpg"
+  },
+
+  {
     "id": "discord-linux-vulkan",
     "type": "youtube",
     "channel": "Wumpus Central",
