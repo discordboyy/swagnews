@@ -7,33 +7,71 @@ import { sidebarItemsMain, sidebarItemsExtra, sidebarItemsFirst } from '../data/
 import Sidebar from '../components/Sidebar'
 import GameWidget from '../components/GameWidget'
 import "../css/logo.css"
+import { useEffect, useState } from "react";
 
 // After index 1 (nettspend), sidebar renders, then the rest of the feed
 const SIDEBAR_BREAK_AFTER_INDEX = 1
 
 function QuestionBanner() {
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const isHidden = localStorage.getItem("questionBannerHidden");
+    if (isHidden === "true") {
+      setVisible(false);
+    }
+  }, []);
+
+  const handleClose = () => {
+    setVisible(false);
+    localStorage.setItem("questionBannerHidden", "true");
+  };
+
+  if (!visible) return null;
+
   return (
-    <div className="section-question" style={{ backgroundColor: '#ffd60a' }}>
+    <div
+      className="section-question"
+      style={{ backgroundColor: "#ffd60a", position: "relative" }}
+    >
+      {/* КНОПКА ЗАКРЫТИЯ */}
+      <button
+        onClick={handleClose}
+        style={{
+          position: "absolute",
+          top: "10px",
+          right: "10px",
+          border: "none",
+          background: "transparent",
+          fontSize: "20px",
+          cursor: "pointer",
+          zIndex: "9999",
+        }}
+      >
+        ✕
+      </button>
+
       <div className="title-question">
         <h3>
-          Маєте ідею чи пропозицію?{' '}
+          Маєте ідею чи пропозицію?{" "}
           <span>
             <img
-              style={{ display: 'inline-flex', marginBottom: '-3px' }}
+              style={{ display: "inline-flex", marginBottom: "-3px" }}
               src="/swagnews/link/span/span-emoji 09.png"
               alt=""
             />
           </span>
         </h3>
-        <p className="question-description" style={{ color: 'black' }}>
+        <p className="question-description" style={{ color: "black" }}>
           Зв'яжіться з розробником сайту — контакти нижче.
         </p>
       </div>
+
       <a href="#contacts" className="button-contacts">
         <p className="button-description">контакти</p>
       </a>
     </div>
-  )
+  );
 }
 
 function FeedItem({ item }: { item: FeedItem }) {
