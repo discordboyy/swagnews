@@ -3,6 +3,54 @@ import type { FeedItem, SidebarItem } from '../components/types'
 export const feedItems: FeedItem[] = [
 
   {
+    "id": "fortnite-soft-roller-pickaxe",
+    "type": "youtube",
+    "channel": "Fortnite",
+    "views": "523,1 тис.",
+    "title": "НОВИЙ ПРЕДМЕТ У FORTNITE: отримайте кирку Soft Roller безкоштовно за перемогу (Victory Royale) у Battle Royale — подія триватиме до 30 березня 8AM ET",
+    "avatar": "https://pbs.twimg.com/profile_images/2032079913092857857/0qzNnA2L_400x400.jpg",
+    "url": "https://x.com/Fortnite/status/2037319107989893341?s=20",
+    "size": "short",
+    "thumbnail": "https://pbs.twimg.com/media/HEYC7iEbgAA8nBO?format=jpg&name=small"
+  },
+
+  {
+    "id": "adl-game-safety-ranking",
+    "type": "youtube",
+    "channel": "Europa",
+    "views": "3,2 млн",
+    "title": "РЕЙТИНГ БЕЗПЕКИ ІГОР: ADL оцінила мультиплеєрні ігри за рівнем боротьби з дискримінацією — Fortnite посіла перше місце, тоді як Counter-Strike 2 і PUBG отримали найнижчі оцінки",
+    "avatar": "https://pbs.twimg.com/media/HEVy6aEWMAABFOc?format=png&name=small",
+    "url": "",
+    "size": "long",
+    "thumbnail": "https://pbs.twimg.com/media/HEVZSbcXkAA2LBT?format=jpg&name=4096x4096"
+  },
+
+  {
+    "id": "fortnite-king-ice-necklace",
+    "type": "youtube",
+    "channel": "FN News",
+    "views": "146,4 тис.",
+    "title": "МЕРЧ FORTNITE: представлено новий Big Dill necklace у колаборації з King Ice — ціна становить $150, запуск уже відбувся",
+    "avatar": "",
+    "url": "https://www.kingice.com/collections/fortnite/products/fortnite-big-dill-necklace",
+    "size": "short",
+    "thumbnail": "https://www.kingice.com/cdn/shop/files/fortnite-x-king-ice-big-dill-necklace-king-ice-1229405703.jpg?v=1774541615&width=5000"
+  },
+
+  {
+    "id": "ps5-price-increase-2026",
+    "type": "youtube",
+    "channel": "PlayStation",
+    "views": "",
+    "title": "ПІДВИЩЕННЯ ЦІН PLAYSTATION: Sony оголосила про підвищення цін на всі моделі PS5 з 2 квітня — базова версія подорожчає до $649, а PS5 Pro отримає найбільше зростання (+$150)",
+    "avatar": "https://pbs.twimg.com/profile_images/1833447364138299392/AXIZsQe4_400x400.jpg",
+    "url": "https://blog.playstation.com/2026/03/27/new-price-changes-for-ps5-ps5-pro-and-playstation-portal-remote-player/",
+    "size": "long",
+    "thumbnail": "https://pbs.twimg.com/media/HEa3jDxW4AAOciw?format=png&name=large"
+  },
+
+  {
     "id": "fortnite-epic-crisis",
     "type": "article",
     "category": "gaming",
