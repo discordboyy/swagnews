@@ -3,15 +3,41 @@ import type { FeedItem, SidebarItem } from '../components/types'
 export const feedItems: FeedItem[] = [
 
   {
-    "id": "sora-shutdown",
-    "type": "youtube",
-    "channel": "Sora",
-    "views": "42,5 млн",
-    "title": "ЗАКРИТТЯ SORA: додаток Sora припиняє роботу, команда подякувала користувачам за творчість і підтримку та пообіцяла незабаром надати деталі щодо термінів закриття, API і можливості збереження ваших робіт",
-    "avatar": "https://pbs.twimg.com/profile_images/1983301834489114630/RtJHHC7d_400x400.jpg",
-    "url": "https://x.com/soraofficialapp/status/2036546752535470382?s=20",
+    "id": "fortnite-epic-crisis",
+    "type": "article",
+    "category": "gaming",
+    "title": "Epic Games скорочує витрати",
+    "description": "Epic Games закриває ігрові режими Fortnite та звільняє понад 1000 співробітників на фоні падіння активності гравців. Компанія переходить у режим жорсткої оптимізації.",
+    "image": "https://pbs.twimg.com/media/HELs2LIaIAMITsJ?format=jpg&name=large",
+    "emoji": "/swagnews/link/span/span-emoji 01.png",
     "size": "short",
-    "thumbnail": "https://i.ytimg.com/vi/gzneGhpXwjU/maxresdefault.jpg"
+    "heroImage": "https://pbs.twimg.com/media/HELs2LIaIAMITsJ?format=jpg&name=large",
+    "itemTitle": "Fortnite змінюється.",
+    "sections": [
+      {
+        "heading": "закриття режимів",
+        "headingEmoji": "/swagnews/link/span/span-emoji 03.png",
+        "connector": "/swagnews/link/connector/connector (1).png",
+        "text": "Epic Games офіційно закриває кілька режимів у Fortnite, включаючи Rocket Racing, Ballistic та Festival Battle Stage. Це рішення стало частиною масштабної стратегії оптимізації ресурсів.\n\nРежими не змогли утримати достатній рівень активності гравців, тому компанія вирішила зосередитися на більш популярних напрямках гри."
+      },
+      {
+        "heading": "масові звільнення",
+        "headingEmoji": "/swagnews/link/span/span-emoji 04.png",
+        "connector": "/swagnews/link/connector/connector (2).png",
+        "text": "Паралельно з цим Epic Games оголосила про звільнення понад 1000 співробітників. За словами компанії, це вимушений крок через падіння залученості гравців у Fortnite, яке розпочалося ще у 2025 році.\n\nКомпанія зазначає, що витрати значно перевищують прибутки, що змусило керівництво вдатися до радикальних змін."
+      },
+      {
+        "heading": "причини кризи",
+        "headingEmoji": "/swagnews/link/span/span-emoji 05.png",
+        "connector": "/swagnews/link/connector/connector (3).png",
+        "text": "Основною причиною змін стало зниження популярності Fortnite. Попри постійні оновлення та нові режими, інтерес аудиторії поступово зменшувався.\n\nЦе призвело до ситуації, коли компанія почала витрачати більше ресурсів на підтримку гри, ніж отримувала у відповідь."
+      },
+      {
+        "heading": "що далі для Epic Games",
+        "headingEmoji": "/swagnews/link/span/span-emoji 06.png",
+        "text": "Epic Games вже заявила про понад 500 мільйонів доларів економії за рахунок скорочення витрат на маркетинг, контракти та закриття частини відкритих вакансій.\n\nМайбутнє компанії тепер залежить від того, наскільки швидко вона зможе адаптуватися до нових умов і повернути інтерес гравців до своїх продуктів."
+      }
+    ]
   },
   
   {
@@ -27,6 +53,18 @@ export const feedItems: FeedItem[] = [
   },
 
   {
+    "id": "sora-shutdown",
+    "type": "youtube",
+    "channel": "Sora",
+    "views": "42,5 млн",
+    "title": "ЗАКРИТТЯ SORA: додаток Sora припиняє роботу, команда подякувала користувачам за творчість і підтримку та пообіцяла незабаром надати деталі щодо термінів закриття, API і можливості збереження ваших робіт",
+    "avatar": "https://pbs.twimg.com/profile_images/1983301834489114630/RtJHHC7d_400x400.jpg",
+    "url": "https://x.com/soraofficialapp/status/2036546752535470382?s=20",
+    "size": "short",
+    "thumbnail": "https://i.ytimg.com/vi/gzneGhpXwjU/maxresdefault.jpg"
+  },
+
+  {
     "id": "discord-linux-vulkan",
     "type": "youtube",
     "channel": "Wumpus Central",
@@ -34,7 +72,7 @@ export const feedItems: FeedItem[] = [
     "title": "ОНОВЛЕННЯ DISCORD\n• Discord працює над покращенням стрімінгу на Linux\n• Використання Vulkan API для кращої продуктивності\n• Може покращити демонстрацію екрана\n• Більш плавне відео та менша затримка",
     "avatar": "https://pbs.twimg.com/profile_images/1776327141015072768/I__OpXqD_400x400.jpg",
     "url": "https://x.com/WumpusCentral/status/2036132154862674074?s=20",
-    "size": "short",
+    "size": "long",
     "thumbnail": "https://pbs.twimg.com/media/HEHKMq6W4AAYtme?format=jpg&name=medium"
   },
 
@@ -51,18 +89,6 @@ export const feedItems: FeedItem[] = [
   },
 
   {
-    "id": "minecraft-theme-park",
-    "type": "youtube",
-    "channel": "Dexerto",
-    "views": "336,3k",
-    "title": "Паркова зона Minecraft відкриється у Великій Британії наступного року • «Minecraft World» буде у Chessington World of Adventures • Включатиме атракціони • Зустрічі з мобами • Їжу в стилі Minecraft",
-    "avatar": "https://pbs.twimg.com/profile_images/1714301666445402112/5U5myYFv_400x400.jpg",
-    "url": "https://x.com/Dexerto/status/2036016306248450070?s=20",
-    "size": "long",
-    "thumbnail": "https://pbs.twimg.com/media/HEFiCC8WYAArv3i?format=jpg&name=medium"
-  },
-
-  {
     "id": "fortnite-hotfix",
     "type": "youtube",
     "channel": "HYPEX",
@@ -72,6 +98,18 @@ export const feedItems: FeedItem[] = [
     "url": "https://x.com/HYPEX/status/2036225658464981285?s=20",
     "size": "short",
     "thumbnail": "https://pbs.twimg.com/media/HEIbYzdaUAABaEb?format=png&name=900x900"
+  },
+
+  {
+    "id": "minecraft-theme-park",
+    "type": "youtube",
+    "channel": "Dexerto",
+    "views": "336,3k",
+    "title": "Паркова зона Minecraft відкриється у Великій Британії наступного року • «Minecraft World» буде у Chessington World of Adventures • Включатиме атракціони • Зустрічі з мобами • Їжу в стилі Minecraft",
+    "avatar": "https://pbs.twimg.com/profile_images/1714301666445402112/5U5myYFv_400x400.jpg",
+    "url": "https://x.com/Dexerto/status/2036016306248450070?s=20",
+    "size": "short",
+    "thumbnail": "https://pbs.twimg.com/media/HEFiCC8WYAArv3i?format=jpg&name=medium"
   },
 
   {
