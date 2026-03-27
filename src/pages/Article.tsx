@@ -9,6 +9,7 @@ import NewsCard from '../components/NewsCard'
 import YouTubeCard from '../components/YouTubeCard'
 import { sidebarItemsExtra, sidebarItemsMain, sidebarItemsFirst } from '../data/sidebar'
 import type { FeedItem } from '../components/types'
+import BackButton from '../components/BackButton/BackButton'
 
 function FeedItemComponent({ item }: { item: FeedItem }) {
   if (item.type === 'youtube') return <YouTubeCard item={item} />
@@ -152,9 +153,7 @@ export default function Article() {
 
           </div>
 
-          <button onClick={() => navigate('/')} className="article-back-btn">
-            ← назад
-          </button>
+          <BackButton />
         </div>
 
         <div className="small-section">

@@ -1,0 +1,52 @@
+/* src/components/BackButton/BackButton.css */
+.back-button {
+  position: relative;
+  width: 192px;
+  height: 56px;
+  background: #ffffff;
+  border-radius: 28px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #000;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 8px;
+  border: none;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.back-button-bar {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 48px;
+  height: 48px;
+  background: #4ade80; /* green-400 */
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.5s;
+  z-index: 10;
+}
+
+.back-button-text {
+  position: relative;
+  margin-left: 72px;
+  transition: margin-left 0.5s;
+  z-index: 20;
+  transition: all 0.16s;
+}
+
+.back-button:hover .back-button-bar {
+  width: 184px;
+}
+
+.back-button:hover .back-button-text {
+  opacity: 0;
+  color: #4ade80;
+}
