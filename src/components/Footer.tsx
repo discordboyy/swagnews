@@ -14,7 +14,7 @@ export default function Footer() {
                 <p className="role">(P) Project owner</p>
               </div>
               <div className="soc">
-                <p className="soc-description">соцмережі для контакту з зробником</p>
+                <p className="soc-description">Sosiale medier for å kontakte utvikleren</p>
                 <div className="soc-container">
                   <a className="soc-link" href="https://www.instagram.com/mertygraal/" target="_blank" rel="noopener noreferrer">
                     Instagram <span className="arrow"><img src="/swagnews/link/arrow.svg" alt="" /></span>
@@ -35,11 +35,12 @@ export default function Footer() {
         </div>
         <div className="section-question">
           <div className="title-question">
-            <h3>Сайт створений за допомоги партнерів créative web</h3>
+            <h3>Nettstedet er laget med hjelp fra partnerne i créative web</h3>
             <p className="question-description">SWAGNEWS &amp; créative web</p>
           </div>
           <a href="https://t.me/creativewebtg" className="button-contacts" target="_blank" rel="noopener noreferrer">
-            <img className="logo" src="/swagnews/link/creative-web-logo.svg" alt="créative web logo" />
+            <img className="logo" src="/swagnews/link/creative-web-logo.svg" alt="créative web logo"
+            />
           </a>
         </div>
       </div>

@@ -53,7 +53,7 @@ function QuestionBanner() {
 
       <div className="title-question">
         <h3>
-          Маєте ідею чи пропозицію?{" "}
+          Har du en idé eller et forslag?{" "}
           <span>
             <img
               style={{ display: "inline-flex", marginBottom: "-3px" }}
@@ -63,12 +63,12 @@ function QuestionBanner() {
           </span>
         </h3>
         <p className="question-description" style={{ color: "black" }}>
-          Зв'яжіться з розробником сайту — контакти нижче.
+          Ta kontakt med utvikleren av nettsiden – kontaktinformasjon finner du nedenfor.
         </p>
       </div>
 
       <a href="#contacts" className="button-contacts">
-        <p className="button-description">контакти</p>
+        <p className="button-description">kontakt</p>
       </a>
     </div>
   );
