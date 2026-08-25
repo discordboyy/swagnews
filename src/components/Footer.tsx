@@ -16,7 +16,7 @@ export default function Footer() {
               <div className="soc">
                 <p className="soc-description">Sosiale medier for å kontakte utvikleren</p>
                 <div className="soc-container">
-                  <a className="soc-link" href="https://www.instagram.com/mertygraal/" target="_blank" rel="noopener noreferrer">
+                  <a className="soc-link" href="https://www.instagram.com/mertymakki/" target="_blank" rel="noopener noreferrer">
                     Instagram <span className="arrow"><img src="/swagnews/link/arrow.svg" alt="" /></span>
                   </a>
                   <a className="soc-link" href="https://discord.gg/v4qaAne6dx" target="_blank" rel="noopener noreferrer">
