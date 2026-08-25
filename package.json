@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "fetch-steam-deals": "node src/scripts/fetch-steam-deals.mjs",
+    "dev": "npm run fetch-steam-deals && vite",
+    "build": "npm run fetch-steam-deals && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",

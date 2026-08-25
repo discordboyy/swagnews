@@ -3,7 +3,8 @@ import { feedItems } from '../data/posts.ts'
 import type { FeedItem } from '../components/types'
 import NewsCard from '../components/NewsCard'
 import YouTubeCard from '../components/YouTubeCard'
-import { sidebarItemsMain, sidebarItemsExtra, sidebarItemsFirst } from '../data/sidebar.ts'
+import { sidebarItemsMain, sidebarItemsExtra } from '../data/sidebar.ts'
+import { useSteamDeals } from '../hooks/useSteamDeals.ts'
 import Sidebar from '../components/Sidebar'
 import GameWidget from '../components/GameWidget'
 import "../css/logo.css"
@@ -83,6 +84,7 @@ export default function Home() {
   const firstSection  = feedItems.slice(0, SIDEBAR_BREAK_AFTER_INDEX + 1)
   const midSection    = feedItems.slice(SIDEBAR_BREAK_AFTER_INDEX + 1, SIDEBAR_BREAK_AFTER_INDEX + 3)
   const secondSection = feedItems.slice(SIDEBAR_BREAK_AFTER_INDEX + 3)
+  const { items: sidebarItemsFirst } = useSteamDeals()
 
   return (
     <main>

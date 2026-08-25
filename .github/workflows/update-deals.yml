@@ -1,0 +1,16 @@
+name: Update Steam deals
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: node scripts/fetch-steam-deals.mjs
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: update steam deals'
+          file_pattern: public/data/steam-deals.json

@@ -7,7 +7,9 @@ import Sidebar from '../components/Sidebar'
 import GameWidget from '../components/GameWidget'
 import NewsCard from '../components/NewsCard'
 import YouTubeCard from '../components/YouTubeCard'
-import { sidebarItemsExtra, sidebarItemsMain, sidebarItemsFirst } from '../data/sidebar'
+import { sidebarItemsMain, sidebarItemsExtra } from '../data/sidebar.ts'
+import { useSteamDeals } from '../hooks/useSteamDeals.ts'
+
 import type { FeedItem } from '../components/types'
 import BackButton from '../components/BackButton/BackButton'
 
@@ -77,6 +79,9 @@ export default function Article() {
   const { id }   = useParams<{ id: string }>()
   const navigate = useNavigate()
   const item     = feedItems.find((p) => p.id === id)
+
+  // внутри компонента:
+  const { items: sidebarItemsFirst } = useSteamDeals()
 
   useEffect(() => { window.scrollTo(0, 0) }, [id])
 
