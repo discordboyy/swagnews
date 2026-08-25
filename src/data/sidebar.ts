@@ -544,30 +544,30 @@ export const sidebarItemsFirst: SidebarItem[] = [
 ];
 
 export const sidebarItemsMain: SidebarItem[] = [
-  {
-    id: 'gumroad-pack',
-    image: '/swagnews/link/content/créative web/Cover gumroad (3).png',
-    title: 'Mertigraal selger sin egen mockup-pakke',
-    platform: 'Gumroad',
-    date: '14/04/2025',
-    url: 'https://mertygraal.gumroad.com/l/fzach',
-  },
-  {
-    id: 'brand-tg',
-    image: '/swagnews/link/content/créative web/INDEPENDENT INTERNATIONAL UKRAINIAN KIDS.png',
-    title: 'Mertigraal publiserte sitt kommende merke på Telegram',
-    platform: 'telegram',
-    date: '10/04/2025',
-    url: 'https://t.me/creativewebtg/2795',
-  },
-  {
-    id: 'csgo-work',
-    image: '/swagnews/link/content/créative web/lol relationshit.png',
-    title: 'Det siste arbeidet med CSGO-tema',
-    platform: 'Pinterest',
-    date: '05/04/2025',
-    url: 'https://pin.it/4sOAM1xuS',
-  },
+  // {
+  //   id: 'gumroad-pack',
+  //   image: '/swagnews/link/content/créative web/Cover gumroad (3).png',
+  //   title: 'Mertigraal selger sin egen mockup-pakke',
+  //   platform: 'Gumroad',
+  //   date: '14/04/2025',
+  //   url: 'https://mertygraal.gumroad.com/l/fzach',
+  // },
+  // {
+  //   id: 'brand-tg',
+  //   image: '/swagnews/link/content/créative web/INDEPENDENT INTERNATIONAL UKRAINIAN KIDS.png',
+  //   title: 'Mertigraal publiserte sitt kommende merke på Telegram',
+  //   platform: 'telegram',
+  //   date: '10/04/2025',
+  //   url: 'https://t.me/creativewebtg/2795',
+  // },
+  // {
+  //   id: 'csgo-work',
+  //   image: '/swagnews/link/content/créative web/lol relationshit.png',
+  //   title: 'Det siste arbeidet med CSGO-tema',
+  //   platform: 'Pinterest',
+  //   date: '05/04/2025',
+  //   url: 'https://pin.it/4sOAM1xuS',
+  // },
 ]
 
 export const sidebarItemsExtra: SidebarItem[] = [
