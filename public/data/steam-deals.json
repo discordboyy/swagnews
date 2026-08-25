@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T19:00:01.952Z",
+  "updatedAt": "2026-08-25T19:05:02.509Z",
   "items": [
     {
       "id": "how-to-fish",
@@ -13,7 +13,7 @@
     {
       "id": "crimson-desert-enhanced",
       "appId": 3321460,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/abd7dbdeaede8b6c9a6d40bf116ff2b883f2dd45/header.jpg?t=1781661893",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/236f3814be7a97d86831800691b6096d449222a8/header.jpg?t=1787682679",
       "title": "Crimson Desert Enhanced",
       "platform": "-20%",
       "date": "750.00 kr/600.00 kr",
@@ -74,6 +74,15 @@
       "url": "https://store.steampowered.com/app/4075620/"
     },
     {
+      "id": "s-t-a-l-k-e-r-2-heart-of-chornobyl",
+      "appId": 1643320,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1643320/6ab07c3115a9b933530a526b7c8741ce810d7b2f/header_alt_assets_7.jpg?t=1787314871",
+      "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+      "platform": "-30%",
+      "date": "649.00 kr/454.30 kr",
+      "url": "https://store.steampowered.com/app/1643320/"
+    },
+    {
       "id": "blue-prince",
       "appId": 1569580,
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1569580/879ac248a3b548a6bbc32771b950756378e7e922/header.jpg?t=1783605097",
@@ -81,15 +90,6 @@
       "platform": "-40%",
       "date": "335.00 kr/201.00 kr",
       "url": "https://store.steampowered.com/app/1569580/"
-    },
-    {
-      "id": "microsoft-flight-simulator-2020-40th-anniversary-edition",
-      "appId": 1250410,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1250410/header.jpg?t=1787671433",
-      "title": "Microsoft Flight Simulator (2020) 40th Anniversary Edition",
-      "platform": "-65%",
-      "date": "599.00 kr/209.65 kr",
-      "url": "https://store.steampowered.com/app/1250410/"
     },
     {
       "id": "10k-generators-the-ultimate-idle-game",
@@ -101,15 +101,6 @@
       "url": "https://store.steampowered.com/app/5010780/"
     },
     {
-      "id": "portrait-painter",
-      "appId": 3917260,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3917260/43e9c60d0309b1beb8715f628a43c732fd7ae7d8/header.jpg?t=1787677207",
-      "title": "Portrait Painter",
-      "platform": "-20%",
-      "date": "59.50 kr/47.60 kr",
-      "url": "https://store.steampowered.com/app/3917260/"
-    },
-    {
       "id": "chronicles-puzzle-history-path",
       "appId": 4518030,
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4518030/349fdf921add27a5eb19a20269481ca6cffc056b/header.jpg?t=1787677208",
@@ -117,6 +108,15 @@
       "platform": "-15%",
       "date": "44.00 kr/37.40 kr",
       "url": "https://store.steampowered.com/app/4518030/"
+    },
+    {
+      "id": "portrait-painter",
+      "appId": 3917260,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3917260/43e9c60d0309b1beb8715f628a43c732fd7ae7d8/header.jpg?t=1787677207",
+      "title": "Portrait Painter",
+      "platform": "-20%",
+      "date": "59.50 kr/47.60 kr",
+      "url": "https://store.steampowered.com/app/3917260/"
     },
     {
       "id": "statsstation",
@@ -135,6 +135,15 @@
       "platform": "-35%",
       "date": "139.00 kr/90.35 kr",
       "url": "https://store.steampowered.com/app/1839060/"
+    },
+    {
+      "id": "twitch-integrated-throwing-system",
+      "appId": 3116010,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3116010/59e8c27ba6702545e2a32d2c9dd771734d6744c2/header.jpg?t=1787678906",
+      "title": "Twitch Integrated Throwing System",
+      "platform": "-15%",
+      "date": "220.00 kr/187.00 kr",
+      "url": "https://store.steampowered.com/app/3116010/"
     },
     {
       "id": "funguys-swarm",
@@ -157,7 +166,7 @@
     {
       "id": "blood-dungeon",
       "appId": 2431080,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2431080/3efcaa1643c79273ce9ece71c3dd4a7b71f1cb74/header.jpg?t=1787673351",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2431080/3efcaa1643c79273ce9ece71c3dd4a7b71f1cb74/header.jpg?t=1787684411",
       "title": "Blood Dungeon",
       "platform": "-15%",
       "date": "120.00 kr/102.00 kr",
@@ -171,6 +180,15 @@
       "platform": "-15%",
       "date": "120.00 kr/102.00 kr",
       "url": "https://store.steampowered.com/app/2908160/"
+    },
+    {
+      "id": "microsoft-flight-simulator-2020-40th-anniversary-edition",
+      "appId": 1250410,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1250410/header.jpg?t=1787671433",
+      "title": "Microsoft Flight Simulator (2020) 40th Anniversary Edition",
+      "platform": "-65%",
+      "date": "599.00 kr/209.65 kr",
+      "url": "https://store.steampowered.com/app/1250410/"
     },
     {
       "id": "see-through-marbles",
@@ -234,15 +252,6 @@
       "platform": "-15%",
       "date": "36.00 kr/30.60 kr",
       "url": "https://store.steampowered.com/app/4961980/"
-    },
-    {
-      "id": "one-more-slime",
-      "appId": 4998490,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4998490/e3f96c27c0603419ad085451c8864a2b55c9afb1/header.jpg?t=1787666816",
-      "title": "One More Slime",
-      "platform": "-10%",
-      "date": "24.00 kr/21.60 kr",
-      "url": "https://store.steampowered.com/app/4998490/"
     }
   ]
 }
