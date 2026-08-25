@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T18:12:54.693Z",
+  "updatedAt": "2026-08-25T18:59:24.539Z",
   "items": [
     {
       "id": "how-to-fish",
@@ -11,10 +11,10 @@
       "url": "https://store.steampowered.com/app/4001890/"
     },
     {
-      "id": "crimson-desert",
+      "id": "crimson-desert-enhanced",
       "appId": 3321460,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/abd7dbdeaede8b6c9a6d40bf116ff2b883f2dd45/header.jpg?t=1781661893",
-      "title": "Crimson Desert",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/236f3814be7a97d86831800691b6096d449222a8/header.jpg?t=1787682679",
+      "title": "Crimson Desert Enhanced",
       "platform": "-20%",
       "date": "750.00 kr/600.00 kr",
       "url": "https://store.steampowered.com/app/3321460/"
@@ -56,6 +56,15 @@
       "url": "https://store.steampowered.com/app/2764460/"
     },
     {
+      "id": "forza-horizon-6",
+      "appId": 2483190,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/aec13616ef2adf9908ab2bf185f6e0557d6603ef/header_alt_assets_3.jpg?t=1787677842",
+      "title": "Forza Horizon 6",
+      "platform": "-15%",
+      "date": "799.00 kr/679.15 kr",
+      "url": "https://store.steampowered.com/app/2483190/"
+    },
+    {
       "id": "combolands-roguelike-citybuilder",
       "appId": 4075620,
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4075620/94f8d81bbadbc37f1f0ae0a5df30bda1ff4af186/header.jpg?t=1787580309",
@@ -65,31 +74,22 @@
       "url": "https://store.steampowered.com/app/4075620/"
     },
     {
-      "id": "menace",
-      "appId": 2432860,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2432860/712ef94aec7a757b3624747424de8336687743ec/header.jpg?t=1786634291",
-      "title": "MENACE",
-      "platform": "-25%",
-      "date": "399.00 kr/299.25 kr",
-      "url": "https://store.steampowered.com/app/2432860/"
-    },
-    {
-      "id": "the-first-berserker-khazan",
-      "appId": 2680010,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2680010/header.jpg?t=1776936760",
-      "title": "The First Berserker: Khazan",
+      "id": "blue-prince",
+      "appId": 1569580,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1569580/879ac248a3b548a6bbc32771b950756378e7e922/header.jpg?t=1783605097",
+      "title": "Blue Prince",
       "platform": "-40%",
-      "date": "599.00 kr/359.40 kr",
-      "url": "https://store.steampowered.com/app/2680010/"
+      "date": "335.00 kr/201.00 kr",
+      "url": "https://store.steampowered.com/app/1569580/"
     },
     {
-      "id": "kotamon-my-sis-found-a-super-rare-card-in-her-cereal-box-so-i-became-a-garbage-man-to-find-the-entire-collection-and-earn-1-000-000",
-      "appId": 4294490,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4294490/41565686e1040c0f23aa1fe78666de2792f06d73/header.jpg?t=1787394704",
-      "title": "KOTAMON: My Sis Found A Super-Rare Card In Her Cereal Box, So I Became A Garbage Man To Find The Entire Collection And Earn $1,000,000",
-      "platform": "-20%",
-      "date": "84.00 kr/67.20 kr",
-      "url": "https://store.steampowered.com/app/4294490/"
+      "id": "microsoft-flight-simulator-2020-40th-anniversary-edition",
+      "appId": 1250410,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1250410/header.jpg?t=1787671433",
+      "title": "Microsoft Flight Simulator (2020) 40th Anniversary Edition",
+      "platform": "-65%",
+      "date": "599.00 kr/209.65 kr",
+      "url": "https://store.steampowered.com/app/1250410/"
     },
     {
       "id": "10k-generators-the-ultimate-idle-game",
@@ -171,15 +171,6 @@
       "platform": "-15%",
       "date": "120.00 kr/102.00 kr",
       "url": "https://store.steampowered.com/app/2908160/"
-    },
-    {
-      "id": "microsoft-flight-simulator-2020-40th-anniversary-edition",
-      "appId": 1250410,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1250410/header.jpg?t=1787671433",
-      "title": "Microsoft Flight Simulator (2020) 40th Anniversary Edition",
-      "platform": "-65%",
-      "date": "599.00 kr/209.65 kr",
-      "url": "https://store.steampowered.com/app/1250410/"
     },
     {
       "id": "see-through-marbles",
