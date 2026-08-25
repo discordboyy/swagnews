@@ -1,0 +1,266 @@
+{
+  "updatedAt": "2026-08-25T17:28:52.776Z",
+  "items": [
+    {
+      "id": "how-to-fish",
+      "appId": 4001890,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4001890/45c4ddff4901e32c4b8b643e1b97d0d01898d299/header.jpg?t=1787234618",
+      "title": "How to Fish",
+      "platform": "-38%",
+      "date": "75.00 kr/46.50 kr",
+      "url": "https://store.steampowered.com/app/4001890/"
+    },
+    {
+      "id": "crimson-desert",
+      "appId": 3321460,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/abd7dbdeaede8b6c9a6d40bf116ff2b883f2dd45/header.jpg?t=1781661893",
+      "title": "Crimson Desert",
+      "platform": "-20%",
+      "date": "750.00 kr/600.00 kr",
+      "url": "https://store.steampowered.com/app/3321460/"
+    },
+    {
+      "id": "grand-theft-auto-v-enhanced",
+      "appId": 3240220,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg?t=1781187782",
+      "title": "Grand Theft Auto V Enhanced",
+      "platform": "-56%",
+      "date": "549.00 kr/241.56 kr",
+      "url": "https://store.steampowered.com/app/3240220/"
+    },
+    {
+      "id": "palworld",
+      "appId": 1623730,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/6912f19c43a95ff5fe514eedd35e68bf12335459/header.jpg?t=1784714419",
+      "title": "Palworld",
+      "platform": "-30%",
+      "date": "335.00 kr/234.50 kr",
+      "url": "https://store.steampowered.com/app/1623730/"
+    },
+    {
+      "id": "forza-horizon-6",
+      "appId": 2483190,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/aec13616ef2adf9908ab2bf185f6e0557d6603ef/header_alt_assets_3.jpg?t=1787677842",
+      "title": "Forza Horizon 6",
+      "platform": "-15%",
+      "date": "799.00 kr/679.15 kr",
+      "url": "https://store.steampowered.com/app/2483190/"
+    },
+    {
+      "id": "combolands-roguelike-citybuilder",
+      "appId": 4075620,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4075620/94f8d81bbadbc37f1f0ae0a5df30bda1ff4af186/header.jpg?t=1787580309",
+      "title": "Combolands: Roguelike Citybuilder",
+      "platform": "-20%",
+      "date": "120.00 kr/96.00 kr",
+      "url": "https://store.steampowered.com/app/4075620/"
+    },
+    {
+      "id": "sandustry",
+      "appId": 2764460,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2764460/985a3a20945ec9c8e3e898e16cdaffe99d00e884/header.jpg?t=1787606192",
+      "title": "Sandustry",
+      "platform": "-35%",
+      "date": "149.00 kr/96.85 kr",
+      "url": "https://store.steampowered.com/app/2764460/"
+    },
+    {
+      "id": "gallipoli",
+      "appId": 3065940,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3065940/a50a3d05184ba4fb9fefbf326d597342b76de99f/header_alt_assets_0.jpg?t=1787590450",
+      "title": "Gallipoli",
+      "platform": "-25%",
+      "date": "360.00 kr/270.00 kr",
+      "url": "https://store.steampowered.com/app/3065940/"
+    },
+    {
+      "id": "red-dead-redemption-2",
+      "appId": 1174180,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961",
+      "title": "Red Dead Redemption 2",
+      "platform": "-75%",
+      "date": "719.00 kr/179.75 kr",
+      "url": "https://store.steampowered.com/app/1174180/"
+    },
+    {
+      "id": "menace",
+      "appId": 2432860,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2432860/712ef94aec7a757b3624747424de8336687743ec/header.jpg?t=1786634291",
+      "title": "MENACE",
+      "platform": "-25%",
+      "date": "399.00 kr/299.25 kr",
+      "url": "https://store.steampowered.com/app/2432860/"
+    },
+    {
+      "id": "10k-generators-the-ultimate-idle-game",
+      "appId": 5010780,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5010780/26651254bd78d1571f2f35d9f4b46899ea5cfb2e/header.jpg?t=1787677218",
+      "title": "10k Generators: The Ultimate Idle Game",
+      "platform": "-20%",
+      "date": "175.00 kr/140.00 kr",
+      "url": "https://store.steampowered.com/app/5010780/"
+    },
+    {
+      "id": "portrait-painter",
+      "appId": 3917260,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3917260/43e9c60d0309b1beb8715f628a43c732fd7ae7d8/header.jpg?t=1787677207",
+      "title": "Portrait Painter",
+      "platform": "-20%",
+      "date": "59.50 kr/47.60 kr",
+      "url": "https://store.steampowered.com/app/3917260/"
+    },
+    {
+      "id": "chronicles-puzzle-history-path",
+      "appId": 4518030,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4518030/349fdf921add27a5eb19a20269481ca6cffc056b/header.jpg?t=1787677208",
+      "title": "Chronicles puzzle - History path",
+      "platform": "-15%",
+      "date": "44.00 kr/37.40 kr",
+      "url": "https://store.steampowered.com/app/4518030/"
+    },
+    {
+      "id": "statsstation",
+      "appId": 4757480,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4757480/399d122d38e13ef05b69424ab42f16c13443ffb2/header.jpg?t=1787677177",
+      "title": "StatsStation",
+      "platform": "-25%",
+      "date": "84.00 kr/63.00 kr",
+      "url": "https://store.steampowered.com/app/4757480/"
+    },
+    {
+      "id": "polylithic",
+      "appId": 1839060,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1839060/e094f422317614c75e30fff56b47fc037dd4667a/header_alt_assets_0.jpg?t=1787677177",
+      "title": "Polylithic",
+      "platform": "-35%",
+      "date": "139.00 kr/90.35 kr",
+      "url": "https://store.steampowered.com/app/1839060/"
+    },
+    {
+      "id": "funguys-swarm",
+      "appId": 3371770,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3371770/855bee5c726bfdfc69ca0f183834a0c755d770b8/header_alt_assets_5.jpg?t=1787675200",
+      "title": "Funguys Swarm",
+      "platform": "-20%",
+      "date": "94.99 kr/75.99 kr",
+      "url": "https://store.steampowered.com/app/3371770/"
+    },
+    {
+      "id": "eruption-imminent-season-1",
+      "appId": 4307450,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4307450/2aede86c0133daed37afcd31362de1bf67aba8f8/header.jpg?t=1787673618",
+      "title": "Eruption Imminent - Season 1",
+      "platform": "-10%",
+      "date": "165.00 kr/148.50 kr",
+      "url": "https://store.steampowered.com/app/4307450/"
+    },
+    {
+      "id": "blood-dungeon",
+      "appId": 2431080,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2431080/3efcaa1643c79273ce9ece71c3dd4a7b71f1cb74/header.jpg?t=1787673351",
+      "title": "Blood Dungeon",
+      "platform": "-15%",
+      "date": "120.00 kr/102.00 kr",
+      "url": "https://store.steampowered.com/app/2431080/"
+    },
+    {
+      "id": "inseco",
+      "appId": 2908160,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2908160/808406f957686eba3e3abbeab728ae55c6ada917/header.jpg?t=1787673174",
+      "title": "Inseco",
+      "platform": "-15%",
+      "date": "120.00 kr/102.00 kr",
+      "url": "https://store.steampowered.com/app/2908160/"
+    },
+    {
+      "id": "microsoft-flight-simulator-2020-40th-anniversary-edition",
+      "appId": 1250410,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1250410/header.jpg?t=1787671433",
+      "title": "Microsoft Flight Simulator (2020) 40th Anniversary Edition",
+      "platform": "-65%",
+      "date": "599.00 kr/209.65 kr",
+      "url": "https://store.steampowered.com/app/1250410/"
+    },
+    {
+      "id": "twisted-party",
+      "appId": 4332910,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4332910/c0209230255b18cbd332109edf3b13bb16b4ebb8/header.jpg?t=1787670033",
+      "title": "Twisted Party",
+      "platform": "-10%",
+      "date": "59.50 kr/53.55 kr",
+      "url": "https://store.steampowered.com/app/4332910/"
+    },
+    {
+      "id": "blob-of-ink",
+      "appId": 4900980,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4900980/f7bb52ff4e8da2bc1cacb49631147ce1d6f6b279/header.jpg?t=1787669099",
+      "title": "Blob of Ink",
+      "platform": "-15%",
+      "date": "47.50 kr/40.37 kr",
+      "url": "https://store.steampowered.com/app/4900980/"
+    },
+    {
+      "id": "only-one",
+      "appId": 4315910,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4315910/d4f562b3bb865b580027015d5f9768f91f776366/header.jpg?t=1787667105",
+      "title": "Only One",
+      "platform": "-30%",
+      "date": "89.00 kr/62.30 kr",
+      "url": "https://store.steampowered.com/app/4315910/"
+    },
+    {
+      "id": "hide-and-moo",
+      "appId": 5061170,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5061170/22211f11ef489645c73ec484ea29f782f0a95433/header.jpg?t=1787666000",
+      "title": "Hide and Moo!",
+      "platform": "-20%",
+      "date": "70.00 kr/56.00 kr",
+      "url": "https://store.steampowered.com/app/5061170/"
+    },
+    {
+      "id": "apidya-special",
+      "appId": 3956980,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3956980/dfa0188de0188d3bca2a64bc9def2acd04990bd6/header.jpg?t=1787662790",
+      "title": "Apidya' Special",
+      "platform": "-10%",
+      "date": "235.00 kr/211.50 kr",
+      "url": "https://store.steampowered.com/app/3956980/"
+    },
+    {
+      "id": "kingsfall-chess",
+      "appId": 4259640,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4259640/b1cf0eb4151dfb18fdbfd83bf9ae6a68ce92cddb/header.jpg?t=1787662608",
+      "title": "Kingsfall:Chess",
+      "platform": "-15%",
+      "date": "175.00 kr/148.75 kr",
+      "url": "https://store.steampowered.com/app/4259640/"
+    },
+    {
+      "id": "puzzles-patterns",
+      "appId": 5007860,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5007860/6fb1e004935d9afe906996bc5d8d710e0951ca4b/header.jpg?t=1787662299",
+      "title": "Puzzles Patterns",
+      "platform": "-40%",
+      "date": "12.00 kr/7.20 kr",
+      "url": "https://store.steampowered.com/app/5007860/"
+    },
+    {
+      "id": "hapunan",
+      "appId": 4750540,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4750540/12ef54a6f0af8797d3100bb5598332794de5fa5b/header.jpg?t=1787661099",
+      "title": "Hapunan",
+      "platform": "-10%",
+      "date": "47.50 kr/42.75 kr",
+      "url": "https://store.steampowered.com/app/4750540/"
+    },
+    {
+      "id": "sokogram",
+      "appId": 4054100,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4054100/3fcb4a2d231233e4efe864429ce28f7acca448df/header.jpg?t=1787659207",
+      "title": "Sokogram",
+      "platform": "-10%",
+      "date": "120.00 kr/108.00 kr",
+      "url": "https://store.steampowered.com/app/4054100/"
+    }
+  ]
+}
