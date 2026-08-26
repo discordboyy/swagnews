@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T18:53:40.614Z",
+  "updatedAt": "2026-08-26T19:02:09.559Z",
   "items": [
     {
       "id": "how-to-fish",
@@ -11,15 +11,6 @@
       "url": "https://store.steampowered.com/app/4001890/"
     },
     {
-      "id": "palworld",
-      "appId": 1623730,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/6912f19c43a95ff5fe514eedd35e68bf12335459/header.jpg?t=1784714419",
-      "title": "Palworld",
-      "platform": "-30%",
-      "date": "335.00 kr/234.50 kr",
-      "url": "https://store.steampowered.com/app/1623730/"
-    },
-    {
       "id": "red-dead-redemption-2",
       "appId": 1174180,
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961",
@@ -27,6 +18,15 @@
       "platform": "-75%",
       "date": "719.00 kr/179.75 kr",
       "url": "https://store.steampowered.com/app/1174180/"
+    },
+    {
+      "id": "palworld",
+      "appId": 1623730,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/6912f19c43a95ff5fe514eedd35e68bf12335459/header.jpg?t=1784714419",
+      "title": "Palworld",
+      "platform": "-30%",
+      "date": "335.00 kr/234.50 kr",
+      "url": "https://store.steampowered.com/app/1623730/"
     },
     {
       "id": "crimson-desert-enhanced",
@@ -65,13 +65,13 @@
       "url": "https://store.steampowered.com/app/3240220/"
     },
     {
-      "id": "forza-horizon-5",
-      "appId": 1551360,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551360/header.jpg?t=1787677939",
-      "title": "Forza Horizon 5",
-      "platform": "-60%",
-      "date": "599.00 kr/239.60 kr",
-      "url": "https://store.steampowered.com/app/1551360/"
+      "id": "arma-reforger",
+      "appId": 1874880,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1874880/header.jpg?t=1779966148",
+      "title": "Arma Reforger",
+      "platform": "-30%",
+      "date": "429.50 kr/300.65 kr",
+      "url": "https://store.steampowered.com/app/1874880/"
     },
     {
       "id": "sandustry",
@@ -83,13 +83,13 @@
       "url": "https://store.steampowered.com/app/2764460/"
     },
     {
-      "id": "sludgineers",
-      "appId": 4073860,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4073860/7650b13fcdd191929038fdbbfb2800ec0759bbca/header.jpg?t=1787703019",
-      "title": "Sludgineers",
-      "platform": "-20%",
-      "date": "74.99 kr/59.99 kr",
-      "url": "https://store.steampowered.com/app/4073860/"
+      "id": "click-the-button",
+      "appId": 3946950,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3946950/15ece08bab35f4935d997dc44870d73aed3974bf/header.jpg?t=1787768674",
+      "title": "Click the Button",
+      "platform": "-15%",
+      "date": "35.50 kr/30.17 kr",
+      "url": "https://store.steampowered.com/app/3946950/"
     },
     {
       "id": "embermaze-descent",
