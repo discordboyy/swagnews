@@ -7,8 +7,8 @@ export function useSteamDeals() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/steam-deals.json`, {
-        cache: 'no-store',
+    fetch('https://207.127.92.194.nip.io/steam-deals.json', {
+      cache: 'no-store',
     })
       .then((r) => {
         if (!r.ok) throw new Error(`steam-deals.json: ${r.status}`)
