@@ -35,13 +35,18 @@ export default function Footer() {
         </div>
         <div className="section-question">
           <div className="title-question">
-            <h3>Nettstedet er laget med hjelp fra partnerne i créative web</h3>
-            <p className="question-description">SWAGNEWS &amp; créative web</p>
+            <h3>Nettstedet er laget med hjelp fra partnerne i créative web og Makki</h3>
+            <p className="question-description">SWAGNEWS &amp; créative web &amp; Makki</p>
           </div>
-          <a href="https://t.me/creativewebtg" className="button-contacts" target="_blank" rel="noopener noreferrer">
-            <img className="logo" src="/swagnews/link/creative-web-logo.svg" alt="créative web logo"
-            />
-          </a>
+          <article className="logo-footer-partner-holder">
+            <a href="https://t.me/creativewebtg" className="button-contacts" target="_blank" rel="noopener noreferrer">
+              <img className="logo" src="/swagnews/link/creative-web-logo.svg" alt="créative web logo"
+              />
+            </a>
+            <a href="https://t.me/creativewebtg" className="button-contacts" target="_blank" rel="noopener noreferrer">
+              <img className="logo" src="/swagnews/link/email-logo.png" alt="créative web logo" style={{ filter: 'invert(1)', width: '76%', objectFit: 'contain', marginTop: '0px'}} />
+            </a>
+          </article>
         </div>
       </div>
     </footer>

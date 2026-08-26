@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T18:44:47.119Z",
+  "updatedAt": "2026-08-26T18:53:40.614Z",
   "items": [
     {
       "id": "how-to-fish",
@@ -90,6 +90,15 @@
       "platform": "-20%",
       "date": "74.99 kr/59.99 kr",
       "url": "https://store.steampowered.com/app/4073860/"
+    },
+    {
+      "id": "embermaze-descent",
+      "appId": 5013050,
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5013050/72b2294b6b99c2c2b4881c97d8ddef957bf8c87c/header.jpg?t=1787767077",
+      "title": "Embermaze: Descent",
+      "platform": "-10%",
+      "date": "59.50 kr/53.55 kr",
+      "url": "https://store.steampowered.com/app/5013050/"
     },
     {
       "id": "tough-love-arena",
@@ -252,33 +261,6 @@
       "platform": "-20%",
       "date": "84.00 kr/67.20 kr",
       "url": "https://store.steampowered.com/app/3834590/"
-    },
-    {
-      "id": "barbarian",
-      "appId": 1475300,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1475300/0981aed371d3061827e3962477ce013f7b38c8c9/header.jpg?t=1787752231",
-      "title": "Barbarian",
-      "platform": "-35%",
-      "date": "88.50 kr/57.52 kr",
-      "url": "https://store.steampowered.com/app/1475300/"
-    },
-    {
-      "id": "white-rooms",
-      "appId": 4403790,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4403790/50fd7d5f40c417c905b1040284039f4191c630ec/header.jpg?t=1787752047",
-      "title": "White Rooms",
-      "platform": "-15%",
-      "date": "71.00 kr/60.35 kr",
-      "url": "https://store.steampowered.com/app/4403790/"
-    },
-    {
-      "id": "fractured-worlds",
-      "appId": 1879860,
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1879860/82517739c7a265c4f88e607f1851cd4a0bb6f4f9/header.jpg?t=1787749445",
-      "title": "Fractured Worlds",
-      "platform": "-10%",
-      "date": "276.00 kr/248.40 kr",
-      "url": "https://store.steampowered.com/app/1879860/"
     }
   ]
 }

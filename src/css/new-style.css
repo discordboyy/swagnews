@@ -189,3 +189,16 @@
 .short-container-youtube:hover .icon-youtube {
   transform: scale(1.1);
 }
+
+
+
+
+
+
+
+
+
+.logo-footer-partner-holder {
+  display: flex;
+  gap: 5px;
+}
