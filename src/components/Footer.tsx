@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
           <article className="logo-footer-partner-holder">
             <a href="https://t.me/creativewebtg" className="button-contacts" target="_blank" rel="noopener noreferrer">
-              <img className="logo" src="/swagnews/link/creative-web-logo.svg" alt="créative web logo"
+              <img className="logo" id="creative-web-logo" src="/swagnews/link/creative-web-logo.svg" alt="créative web logo"
               />
             </a>
             <a href="https://t.me/creativewebtg" className="button-contacts" target="_blank" rel="noopener noreferrer">

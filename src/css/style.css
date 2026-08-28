@@ -1062,10 +1062,10 @@ h3 {
         align-items: center; /* Centers the content vertically */
       }
       
-    .button-contacts img {
-        max-width: 100%; /* Make sure the image doesn't overflow */
-        height: auto; /* Maintain aspect ratio */
-    }
+    /* .button-contacts img {
+        max-width: 100%; /* Make sure the image doesn't overflow 
+        height: auto; /* Maintain aspect ratio 
+    } */
     
     .button-description {
         color: white;
@@ -1149,7 +1149,7 @@ h3 {
         height: 10px;
     }
 
-    .logo {
+    #creative-web-logo {
         content: url('/link/creative-web-logo-2.svg');
     }
 
